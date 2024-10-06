@@ -1,0 +1,6 @@
+Title: Probablility Matrices
+
+- You can create an augmented matrix of the probabilities, which is an example of a Markov Chain
+    + An evlolving syste where the state in the next step (in our example, the next day) only depends on the state in te current step and not on earlier steps
+
+

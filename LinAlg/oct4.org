@@ -1,0 +1,7 @@
+#+title: Oct4
+
+* If \( \det(A) = 0 \), then \( A \) is not invertible.
+** If *A* has no rows of 0s (null space has a dimension of 0) and *A* is n*n (square), *A* has a non zero determinant meaning it has an inverse
+
+
+** For any n*n Matrix (square matrix), detA^T = detA

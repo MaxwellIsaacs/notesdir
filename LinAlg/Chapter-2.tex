@@ -1,0 +1,150 @@
+% Created 2024-10-03 Thu 12:49
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\date{\today}
+\title{Chap2}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={Chap2},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.7.11)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Chapter 2}
+\label{sec:org3fd77da}
+\subsection{Matrix Addition Review}
+\label{sec:orgb4f2b22}
+\begin{itemize}
+\item All matrices added or subtracted with each other need to be the same shape
+\item Matrix addition and subtraction hold the same properties as normal arthematic
+\end{itemize}
+\subsection{Matrix Multiplication Review}
+\label{sec:org5f3e107}
+\begin{itemize}
+\item Not communitive, doesn't share the same properties as normal arthematic
+\end{itemize}
+\subsection{Transposition Review}
+\label{sec:org36926c7}
+\begin{itemize}
+\item Can be seen as a rotation about the main diagonal
+\begin{itemize}
+\item Therefore, matrices that are symetric about their main diagonal are called symetric and are equal to their tranpose
+\end{itemize}
+\end{itemize}
+\subsection{Vector addition Review}
+\label{sec:org5a50211}
+\begin{itemize}
+\item We the linear combination of two vectors is ``closed'' since the sum will always be within R\textsuperscript{n}
+\item Can also be view geometrically (how else would you view vectors that matters?)
+\begin{itemize}
+\item as a list is really about it
+\end{itemize}
+\end{itemize}
+\subsection{Vector multiplication Review}
+\label{sec:orgac29d9b}
+\begin{itemize}
+\item All linear systems can be viewed as a product between vector \textbf{a} and matrix \textbf{b}
+\begin{itemize}
+\item This is by what is essentially factoring out the coefficient matrix, so you are left with the vector of variables (ex. x\textsubscript{1}, x\textsubscript{2}, x\textsubscript{3}) times the matrix of coefficients
+\end{itemize}
+\item You can consider a matrix a row of vectors, so applying a scalar product is as simple as the linear combination of these vectoorg-html-export-to-htmls (not exactly, linear combination is equal to the size of the vectors, but this would be just smushing them together)
+\item So a vector times a matrix is just each ordered element of the vector times each ordered vector of the matrix (since the matrix is just a row of columns)
+\begin{itemize}
+\item For instance:
+{[}8 9 1]   [5]      [8]    []    []
+{[}2 0 1] * [8]  =  5[2] + 8[] + 9[]
+{[}6 7 1]   [9]      [6]    []    []
+\end{itemize}
+\item Any given a\textsubscript{j} column vector of matrix \textbf{A} multiplied by the column vector e\textsubscript{j} of the identity matrix \textbf{I} is equal to the a\textsubscript{j}
+\end{itemize}
+\subsection{Linear Tranformations}
+\label{sec:org35e5ef7}
+\begin{itemize}
+\item Row of the matrix that's applied times the columns of the matrix that's transformed
+\item We represent a given linear transformation with the notation below. The power it's raised to just means the number of dimensions the matrix is in. All this means is that all other dimensions are in the whitespace.
+\[
+        T : \mathbb{R}^n \to \mathbb{R}^m
+        \]
+\begin{itemize}
+\item \emph{This raised two questions for me}
+\begin{enumerate}
+\item Can n > m?
+\begin{enumerate}
+\item Yes, but only with non square matrices, and we don't focus on those right now
+\end{enumerate}
+\item Are there just an infinite amount of dimensions in the null space?
+\begin{enumerate}
+\item The null space isn't a place, it's what dimensions get shoved into the origin after the linear transformation. I think this means that the matrix consists of vectors that are linearly codependent (\emph{it's linearly dependent retard})? (\textbf{see X}) There are only infinite dimensions in the null space if you are dealing with infinite dimensions
+\item A better way to phrase the null space is the dimensions that get collpased into the origin, meaning they no longer contribute to the output. In a linear transformation the corresponding column would be 0.
+\item If some of the columns of the matrix are linearly dependent (meaning 2 columns add up to another) then one of the dimensions doesn't contribute anything new to the transformation, results in a larger null space (this is kind of a summary of what chatGPT said, I'm not sure what it fully means)
+\begin{enumerate}
+\item if you imagine the vectors added together \emph{head to tail}, after two get added, the third just stays in place, because it is equal to the other two vectors added together. Therefore, the vector doesn't add a new dimension in space. When you make different combos of the vectors, they won't be in 3 dimensions (in a 3x3 matrix thats linearly dependent), meaning they're span 2d.
+\item As you should already know, null space + rank = n \emph{number of columns}. For every linearly dependent column, one dimension becomes redundant and will 0 out in gaussian elimination. This decreases the rank by one, in turn increasing the null space by one.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\end{itemize}
+\item New vocab dropped:
+\begin{itemize}
+\item \textbf{T\textsubscript{a}} in the graphic below is refered to as the \textbf{matrix transformation induced} by A
+\[
+        T_A : \mathbb{R}^n \to \mathbb{R}^m \quad \text{defined by} \quad T_A(x) = Ax \quad \text{for every} \quad x \in \mathbb{R}^n
+        \]
+\end{itemize}
+
+\item The rotation of \(\frac{\pi}{2}\) radians is equavalent to applying the matrix below:
+      \being{bmatrix}
+      0 \& -1 \\
+      1 \& 0
+      \end{bmatrix}
+since you are moving the rotating the basis vectors 90 degrees to the left. If you notice, you are actually calculating the cos, -sin, sin, and cos of the angle. This is written below in a much less retarded format so it makes sense.
+\begin{bmatrix}
+\cos(\theta) & -\sin(\theta) \\
+\sin(\theta) & \cos(\theta)
+\end{bmatrix}
+What's crazy is this is only possible because of the unit circle (kind of). Think about rotating the basis vectors (which are just points on a circle/sphere with a radius of one) as the same as moving the unit circle triangle of radius one. Therefore, the cos and sin are the ratio at which the basis vectors change
+\end{itemize}
+\subsection{Vector addition and multiplication Review}
+\label{sec:orgc564f82}
+\subsection{Vector addition and multiplication Review}
+\label{sec:org177ed2e}
+
+
+
+
+
+\subsubsection{Overarching Ideas of the Chapter}
+\label{sec:org28d4122}
+\begin{itemize}
+\item A matrix is just a row of vectors. Any sort of matrix operation is just a transforming these three (or two, or four, etc) basis vectors
+\item Finding the homogenous solution to a linear equation (i.e setting a matrix times a vector equal to 0) is asking what vector falls in the null space of a given matrix.
+\item When multiplying a matrix by a vector \emph{Ax = b} we say A = r, where r is the rank of matrix A. If the rank of [A | b] = r+1, the system is inconsistent (an entire plane is in the null space while the vector \emph{b} doesn't equal z on that axis)
+
+   \emph{A}     \emph{x}
+{[}8 9 11] [ 1]
+{[}2 0 1] [ 2]
+{[}0 0 0] [ 9]
+
+\begin{itemize}
+\item \emph{Why is this the case?} The entire z plane gets smushed into the null space. Therefore, the vector \emph{x} is impossible after the given transformation, since it has a z value of 9. If the problem were asking for the homogenous solution, it wouldnt matter since the problem is asking for the null space anyways
+\end{itemize}
+
+\item When a matrix
+\end{itemize}
+\end{document}

@@ -1,0 +1,223 @@
+/* Base Layout and Typography */
+body {
+    font-family: "Roboto", "Open Sans", sans-serif;
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+#content {
+    max-width: 60em;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 0.2em;
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #2c3e50;
+    margin-top: 1.5em;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Tasks (TODO, DONE, etc.) */
+.todo {
+    font-family: monospace;
+    color: red;
+}
+
+.done {
+    font-family: monospace;
+    color: green;
+}
+
+.priority {
+    font-family: monospace;
+    color: orange;
+}
+
+/* Tags */
+.tag {
+    background-color: #eee;
+    font-family: monospace;
+    padding: 2px;
+    font-size: 80%;
+    font-weight: normal;
+}
+
+/* Timestamps */
+.timestamp {
+    color: #bebebe;
+}
+
+.timestamp-kwd {
+    color: #5f9ea0;
+}
+
+/* Text Alignment */
+.org-right {
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: right;
+}
+
+.org-left {
+    margin-left: 0px;
+    margin-right: auto;
+    text-align: left;
+}
+
+.org-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #3498db;
+    padding-left: 1em;
+    color: #555;
+    font-style: italic;
+    background-color: #f4f7f9;
+    margin: 1em 0;
+}
+
+/* Code Blocks */
+pre, code {
+    background-color: #f3f4f6;
+    border-radius: 5px;
+    padding: 0.8em;
+    font-family: "Courier New", monospace;
+    overflow: auto;
+    margin: 1.2em;
+    font-size: 0.9em;
+}
+
+pre.src {
+    position: relative;
+    overflow: auto;
+}
+
+pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+}
+
+pre.src:hover:before {
+    display: inline;
+    margin-top: 14px;
+}
+
+/* Code Language Labels */
+pre.src-C:before {
+    content: 'C';
+}
+pre.src-python:before {
+    content: 'Python';
+}
+pre.src-java:before {
+    content: 'Java';
+}
+pre.src-sh:before {
+    content: 'shell';
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Image Alignment */
+.figure {
+    padding: 1em;
+}
+
+.figure p {
+    text-align: center;
+}
+
+/* Equations */
+.equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+
+.equation {
+    vertical-align: middle;
+}
+
+.equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+
+/* Misc */
+textarea {
+    overflow-x: auto;
+}
+
+.linenr {
+    font-size: smaller;
+}
+
+.org-info-js_search-highlight {
+    background-color: #ffff00;
+    color: #000000;
+    font-weight: bold;
+}
+
+.org-svg {}

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-06 Sun 02:29 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Midterm Review</title>
+<meta name="generator" content="Org Mode" />
+<style>
+          /* Custom CSS */
+          body { font-family: 'Roboto', 'Open Sans', sans-serif; max-width: 60em; margin: 0 auto; padding: 2em; background-color: #f9f9f9; color: #333; line-height: 1.6; font-size: 0.9em; }
+          h1, h2, h3, h4 { color: #2c3e50; margin-top: 1.5em; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5em; }
+          p, li { font-size: 1em; line-height: 1.6; margin-bottom: 1em; }
+          code, pre { background-color: #f3f4f6; border-radius: 5px; padding: 0.8em; font-family: 'Courier New', monospace; overflow: auto; margin: 1.2em; font-size: 0.85em; }
+          blockquote { border-left: 4px solid #3498db; padding-left: 1em; color: #555; font-style: italic; background-color: #f4f7f9; margin: 1em 0; }
+          table { border-collapse: collapse; width: 100%; }
+          td, th { border: 1px solid #ddd; padding: 8px; text-align: left; }
+          th { background-color: #f2f2f2; font-weight: bold; }
+          .todo { font-family: monospace; color: red; }
+          .done { font-family: monospace; color: green; }
+          .priority { font-family: monospace; color: orange; }
+        </style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Midterm Review</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga83ac30">1. Review 1</a>
+<ul>
+<li><a href="#org0837b0c">1.1. Problem 1</a>
+<ul>
+<li><a href="#orgccbeb7c">1.1.1. Answer</a></li>
+</ul>
+</li>
+<li><a href="#org23f3c8d">1.2. Problem 2</a>
+<ul>
+<li><a href="#org85e4f17">1.2.1. Answer</a></li>
+</ul>
+</li>
+<li><a href="#org1ba3ce9">1.3. Problem 3</a>
+<ul>
+<li><a href="#org031f87e">1.3.1. Answer</a></li>
+</ul>
+</li>
+<li><a href="#orgce69fd6">1.4. Problem 4</a>
+<ul>
+<li><a href="#org0f6be6c">1.4.1. Answer</a></li>
+</ul>
+</li>
+<li><a href="#org28a41cc">1.5. Problem 5</a>
+<ul>
+<li><a href="#org05a5c48">1.5.1. Answer</a></li>
+</ul>
+</li>
+<li><a href="#org883df4b">1.6. Problem 6</a>
+<ul>
+<li><a href="#org6ee63e5">1.6.1. Answer</a></li>
+</ul>
+</li>
+<li><a href="#orgdd04c77">1.7. Problem 7</a></li>
+<li><a href="#org922968b">1.8. Problem 8</a>
+<ul>
+<li><a href="#orge0a055c">1.8.1. Answer</a></li>
+</ul>
+</li>
+<li><a href="#org2341c53">1.9. Problem 9</a>
+<ul>
+<li><a href="#orge6e1c39">1.9.1. Answer</a></li>
+</ul>
+</li>
+<li><a href="#org0549e08">1.10. Problem 10</a>
+<ul>
+<li><a href="#org98b4a45">1.10.1. Answer</a></li>
+</ul>
+</li>
+<li><a href="#orgbf943eb">1.11. Problem 11</a></li>
+<li><a href="#org1abdb04">1.12. Problem 12</a>
+<ul>
+<li><a href="#orgd484b86">1.12.1. Answer</a></li>
+</ul>
+</li>
+<li><a href="#orgb8d8bcc">1.13. Problem 13</a>
+<ul>
+<li><a href="#org29e5d73">1.13.1. Answer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga83ac30" class="outline-2">
+<h2 id="orga83ac30"><span class="section-number-2">1.</span> Review 1</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org0837b0c" class="outline-3">
+<h3 id="org0837b0c"><span class="section-number-3">1.1.</span> Problem 1</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Grading midterms is hard and we want to automate it.
+Suppose we want to ask “for what x does x2 = 12 ?” and grade your answer automatically. We provide
+you with a text-box to type in your answer. We then take your answer, convert it to a double
+studentAnswer, and provide it to the following function isCorrect to check if it’s correct.
+There’s two big flaws with this function. What are they? Write us a better version.
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #ECBE7B;">boolean</span> <span style="color: #c678dd;">isCorrect</span><span style="color: #51afef;">(</span><span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">studentAnswer</span><span style="color: #51afef;">)</span> <span style="color: #51afef;">{</span>
+        <span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">correctAnswer</span> = Math.sqrt<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span>/<span style="color: #da8548; font-weight: bold;">2</span><span style="color: #c678dd;">)</span>;
+        <span style="color: #51afef;">return</span> studentAnswer == correctAnswer;
+<span style="color: #51afef;">}</span>
+</pre>
+</div>
+</div>
+<div id="outline-container-orgccbeb7c" class="outline-4">
+<h4 id="orgccbeb7c"><span class="section-number-4">1.1.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ul class="org-ul">
+<li>The two big flaws are as follows:
+<ol class="org-ol">
+<li>The function doesn&rsquo;t account for the student answer being negative</li>
+<li>The function tries to compare doubles directly, which won&rsquo;t work, especially with irrational numbers. You would need to compare the difference of the doubles to an arbitrarily small value like .001</li>
+</ol></li>
+</ul>
+<p>
+How would I write this code?
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #ECBE7B;">boolean</span> <span style="color: #c678dd;">isCorrect</span> <span style="color: #51afef;">(</span><span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">studentAnswer</span><span style="color: #51afef;">)</span> <span style="color: #51afef;">{</span>
+    <span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">correctAnswer</span> = Math.sqrt<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span>/<span style="color: #da8548; font-weight: bold;">2</span><span style="color: #c678dd;">)</span>;
+    <span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">difference</span> = correctAnswer - Math.abs<span style="color: #c678dd;">(</span>studentAnswer<span style="color: #c678dd;">)</span>;
+    <span style="color: #51afef;">return</span> Math.abs<span style="color: #c678dd;">(</span>difference<span style="color: #c678dd;">)</span> &lt; .<span style="color: #da8548; font-weight: bold;">01</span>;
+<span style="color: #51afef;">}</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org23f3c8d" class="outline-3">
+<h3 id="org23f3c8d"><span class="section-number-3">1.2.</span> Problem 2</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+ Write the code that would replace <b><b><b>BLANK<sub>ONE</sub></b></b></b> and <b><b><b>BLANK<sub>TWO</sub></b></b></b> respectively to complete
+the method findNextLargest(int upperBound,int[] array). The purpose of this method is to find
+the position (i.e. the index) of the largest element inside array that is upper bounded by upperBound
+(i.e. it is strictly lower than upperBound). You can assume that the input array contains at least one
+such element. In case of ties, the method returns the largest between the indices.
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #51afef;">public</span> <span style="color: #51afef;">static</span> <span style="color: #ECBE7B;">int</span> <span style="color: #c678dd;">findNextLargest</span><span style="color: #51afef;">(</span><span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">upperBound</span>, <span style="color: #ECBE7B;">int</span><span style="color: #c678dd;">[]</span> <span style="color: #dcaeea;">array</span><span style="color: #51afef;">){</span>
+        <span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">largest</span>=<span style="color: #da8548; font-weight: bold;">0</span>;
+        <span style="color: #51afef;">for</span> <span style="color: #c678dd;">(</span><span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">i</span>=<span style="color: #da8548; font-weight: bold;">0</span>; i&lt;array.<span style="color: #ECBE7B;">length</span>;i++<span style="color: #c678dd;">){</span>
+                <span style="color: #51afef;">if</span> <span style="color: #98be65;">(</span> ***BLANK_ONE*** <span style="color: #98be65;">){</span>
+                ***BLANK_TWO***
+                <span style="color: #98be65;">}</span>
+        <span style="color: #c678dd;">}</span>
+        <span style="color: #51afef;">return</span> largest;
+<span style="color: #51afef;">}</span>
+</pre>
+</div>
+</div>
+<div id="outline-container-org85e4f17" class="outline-4">
+<h4 id="org85e4f17"><span class="section-number-4">1.2.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<ul class="org-ul">
+<li>BLANK ONE</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-java">array<span style="color: #51afef;">[</span>i<span style="color: #51afef;">]</span> &gt; array<span style="color: #51afef;">[</span>largest<span style="color: #51afef;">]</span> &amp;&amp; array<span style="color: #51afef;">[</span>i<span style="color: #51afef;">]</span> &lt; upperBound
+</pre>
+</div>
+<ul class="org-ul">
+<li>BLANK TWO</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-java">largest = i;
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org1ba3ce9" class="outline-3">
+<h3 id="org1ba3ce9"><span class="section-number-3">1.3.</span> Problem 3</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Assume inside a package called midterm there is only one file named Midterm.java and this file contains
+only one Java class called Midterm.
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #ECBE7B;">Galaxy</span> <span style="color: #dcaeea;">andromeda</span> = <span style="color: #51afef;">new</span> <span style="color: #ECBE7B;">Galaxy</span><span style="color: #51afef;">(</span>&#8220;Galaxy A&#8221;<span style="color: #51afef;">)</span>;
+<span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">stars</span> = andromeda.numOfStars;
+</pre>
+</div>
+<p>
+Assuming that the statements above from the main method of the class Midterm compile and run
+without any errors, write three properties you can infer to be true about the class Galaxy and its
+members.
+</p>
+</div>
+<div id="outline-container-org031f87e" class="outline-4">
+<h4 id="org031f87e"><span class="section-number-4">1.3.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<ol class="org-ol">
+<li>Galaxy class has a public, non static field called numOfStars</li>
+<li>One of the Galaxy class&rsquo;s constructors takes a string as a parameter</li>
+<li>numOfStars is initialized with a value in the constructor, or else it would have to be static</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgce69fd6" class="outline-3">
+<h3 id="orgce69fd6"><span class="section-number-3">1.4.</span> Problem 4</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Suppose Strings A and B have the same hashCode. What does this tell us about A and B?
+</p>
+</div>
+<div id="outline-container-org0f6be6c" class="outline-4">
+<h4 id="org0f6be6c"><span class="section-number-4">1.4.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<p>
+This means that the strings could be the same value, or they could just coincedentally have the same hash code. There are infinitely many strings and a finite amount of hash codes
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org28a41cc" class="outline-3">
+<h3 id="org28a41cc"><span class="section-number-3">1.5.</span> Problem 5</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Suppose you’re given the following two classes.
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #51afef;">public</span> <span style="color: #51afef;">class</span> <span style="color: #ECBE7B;">Person</span> <span style="color: #51afef;">{</span>
+        <span style="color: #51afef;">public</span> <span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">mass</span>;
+        <span style="color: #51afef;">public</span> Person<span style="color: #c678dd;">(</span><span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">mass</span><span style="color: #c678dd;">)</span> <span style="color: #c678dd;">{</span>
+                <span style="color: #51afef;">this</span>.mass = mass;
+        <span style="color: #c678dd;">}</span>
+<span style="color: #51afef;">}</span>
+<span style="color: #51afef;">public</span> <span style="color: #51afef;">class</span> <span style="color: #ECBE7B;">Planet</span> <span style="color: #51afef;">{</span>
+        <span style="color: #51afef;">private</span> <span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">gravity</span>;
+        <span style="color: #51afef;">public</span> Planet<span style="color: #c678dd;">(</span><span style="color: #ECBE7B;">double</span> <span style="color: #dcaeea;">gravity</span><span style="color: #c678dd;">)</span> <span style="color: #c678dd;">{</span>
+            <span style="color: #51afef;">this</span>.gravity = gravity;
+        <span style="color: #c678dd;">}</span>
+<span style="color: #51afef;">}</span>
+<span style="color: #5B6268;">// </span><span style="color: #5B6268;">Returns the effective weight of Person person on this planet</span>
+<span style="color: #51afef;">public</span> <span style="color: #ECBE7B;">double</span> <span style="color: #c678dd;">calculateWeight</span><span style="color: #51afef;">(</span><span style="color: #ECBE7B;">Person</span> <span style="color: #dcaeea;">person</span><span style="color: #51afef;">)</span> <span style="color: #51afef;">{</span>
+    <span style="color: #51afef;">return</span> person.mass * <span style="color: #51afef;">this</span>.gravity;
+<span style="color: #51afef;">}</span>
+</pre>
+</div>
+<p>
+(a) Write a new method weightOn in the Person that enables the following code snippet to compile
+and print the values 0.6 and 600 as desired.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #51afef;">public</span> <span style="color: #51afef;">static</span> <span style="color: #ECBE7B;">void</span> <span style="color: #c678dd;">main</span><span style="color: #51afef;">(</span><span style="color: #ECBE7B;">String</span><span style="color: #c678dd;">[]</span> <span style="color: #dcaeea;">args</span><span style="color: #51afef;">)</span> <span style="color: #51afef;">{</span>
+        <span style="color: #ECBE7B;">Person</span> <span style="color: #dcaeea;">bob</span> = <span style="color: #51afef;">new</span> <span style="color: #ECBE7B;">Person</span><span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">60</span><span style="color: #c678dd;">)</span>;
+        <span style="color: #ECBE7B;">Planet</span> <span style="color: #dcaeea;">pluto</span> = <span style="color: #51afef;">new</span> <span style="color: #ECBE7B;">Planet</span><span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">0.01</span><span style="color: #c678dd;">)</span>;
+        <span style="color: #ECBE7B;">Planet</span> <span style="color: #dcaeea;">jupiter</span> = <span style="color: #51afef;">new</span> <span style="color: #ECBE7B;">Planet</span><span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">10</span><span style="color: #c678dd;">)</span>;
+        System.out.println<span style="color: #c678dd;">(</span>bob.weightOn<span style="color: #98be65;">(</span>pluto<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span>;
+        System.out.println<span style="color: #c678dd;">(</span>bob.weightOn<span style="color: #98be65;">(</span>jupiter<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span>;
+<span style="color: #51afef;">}</span>
+</pre>
+</div>
+<p>
+(b) What is the type of this inside the body of calculateWeight?
+</p>
+</div>
+<div id="outline-container-org05a5c48" class="outline-4">
+<h4 id="org05a5c48"><span class="section-number-4">1.5.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-5-1">
+<ol class="org-ol">
+<li><p>
+Here is my implementation
+</p>
+<div class="org-src-container">
+<pre class="src src-java">   <span style="color: #51afef;">public</span> <span style="color: #ECBE7B;">double</span> <span style="color: #c678dd;">weightOn</span> <span style="color: #51afef;">(</span><span style="color: #ECBE7B;">Planet</span> <span style="color: #dcaeea;">x</span><span style="color: #51afef;">)</span> <span style="color: #51afef;">{</span>
+        <span style="color: #51afef;">return</span> x.calculateWeight <span style="color: #c678dd;">(</span><span style="color: #51afef;">this</span><span style="color: #c678dd;">)</span>;
+   <span style="color: #51afef;">}</span>
+</pre>
+</div></li>
+<li><b>this</b> is memeber of the Planet data type</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org883df4b" class="outline-3">
+<h3 id="org883df4b"><span class="section-number-3">1.6.</span> Problem 6</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+<i>Too long, see PDF for the question</i>
+</p>
+</div>
+<div id="outline-container-org6ee63e5" class="outline-4">
+<h4 id="org6ee63e5"><span class="section-number-4">1.6.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<ol class="org-ol">
+<li>Candy would be considered an immutable data type, since it has all private fields and no setters. CandyStore follows the same structure (no setters, all private fields) so it is also immuatble</li>
+<li><p>
+My implementation is below:
+</p>
+<div class="org-src-container">
+<pre class="src src-java">   <span style="color: #51afef;">this</span>.candies<span style="color: #51afef;">[</span>i<span style="color: #51afef;">]</span>.equals <span style="color: #51afef;">(</span>c<span style="color: #51afef;">)</span>
+</pre>
+</div></li>
+<li><p>
+getSourCandies is a static function associated with the Candy data type; Below is my implementation:
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #51afef;">public</span> <span style="color: #51afef;">static</span> <span style="color: #ECBE7B;">Candy</span><span style="color: #51afef;">[]</span> <span style="color: #c678dd;">getSourCandies</span> <span style="color: #51afef;">(</span><span style="color: #ECBE7B;">String</span> <span style="color: #dcaeea;">OOPsux</span>, <span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">whyDoesEeveryFunctionNeedAnAssociatedDataType</span><span style="color: #51afef;">)</span>;
+</pre>
+</div></li>
+<li>Below is my implementation:</li>
+</ol>
+<div class="org-src-container">
+<pre class="src src-java">candies<span style="color: #51afef;">[</span>i<span style="color: #51afef;">]</span>.isChewier <span style="color: #51afef;">(</span>c<span style="color: #51afef;">)</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdd04c77" class="outline-3">
+<h3 id="orgdd04c77"><span class="section-number-3">1.7.</span> Problem 7</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+<i>Skipped because it was UML, come back tmr</i>
+</p>
+</div>
+</div>
+<div id="outline-container-org922968b" class="outline-3">
+<h3 id="org922968b"><span class="section-number-3">1.8.</span> Problem 8</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+<i>Requires a UML diagram, see PDF</i>
+</p>
+</div>
+<div id="outline-container-orge0a055c" class="outline-4">
+<h4 id="orge0a055c"><span class="section-number-4">1.8.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-8-1">
+<p>
+return super.getPreptime() + Topping.getPrepTime;
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org2341c53" class="outline-3">
+<h3 id="org2341c53"><span class="section-number-3">1.9.</span> Problem 9</h3>
+<div class="outline-text-3" id="text-1-9">
+<p>
+Considering what you know about the internal implementation of ArrayList in Java, how many objects
+are created in the following lines of code?
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #ECBE7B;">ArrayList</span><span style="color: #51afef;">&lt;</span><span style="color: #ECBE7B;">Wizard</span><span style="color: #51afef;">&gt;</span> <span style="color: #dcaeea;">slytherin</span> = <span style="color: #51afef;">new</span> <span style="color: #ECBE7B;">Arraylist</span><span style="color: #51afef;">&lt;</span><span style="color: #ECBE7B;">Wizard</span><span style="color: #51afef;">&gt;()</span>;
+slytherin.add<span style="color: #51afef;">(</span><span style="color: #51afef;">new</span> <span style="color: #ECBE7B;">Wizard</span><span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">18</span>,&#8221;Draco&#8221;<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>;
+<span style="color: #ECBE7B;">Integer</span> <span style="color: #dcaeea;">age</span> = <span style="color: #da8548; font-weight: bold;">180</span>;
+slytherin.add<span style="color: #51afef;">(</span><span style="color: #51afef;">new</span> <span style="color: #ECBE7B;">Wizard</span><span style="color: #c678dd;">(</span>age, &#8220;youknowwho&#8221;<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>;
+</pre>
+</div>
+</div>
+<div id="outline-container-orge6e1c39" class="outline-4">
+<h4 id="orge6e1c39"><span class="section-number-4">1.9.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-9-1">
+<p>
+Assuming everything about ArrayLists (missed this lecture), I would assume there is an object of ArrayList, a head and a tail. It also has the object within the list, so 4 in total.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org0549e08" class="outline-3">
+<h3 id="org0549e08"><span class="section-number-3">1.10.</span> Problem 10</h3>
+<div class="outline-text-3" id="text-1-10">
+<p>
+Using the method above, fill in the missing expressions/statements below for a method in SLinkedList
+that takes no inputs, traverses the list, and swaps pairs of elements. For example, if the list had the
+following elements A B C D E F G, then after the method has been executed, the list will contain the
+elements in the following order B A D C F E G. The method should work no matter the size of the list.
+Note that the method does not return anything, it just performs all the swaps. The time complexity
+for this method should be O(n), where n is the number of elements in the list (i.e. the number of basic
+steps to execute is proportional to the number of elements in the list).
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #51afef;">public</span> <span style="color: #ECBE7B;">void</span> <span style="color: #c678dd;">swapPairs</span><span style="color: #51afef;">(){</span>
+        <span style="color: #ECBE7B;">SNode</span> <span style="color: #dcaeea;">node</span> = <span style="color: #51afef;">this</span>.head;
+        <span style="color: #51afef;">while</span> <span style="color: #c678dd;">(</span> ***BLANK1*** <span style="color: #c678dd;">)</span> <span style="color: #c678dd;">{</span>
+                ***BLANK2***
+                ***BLANK3***
+        <span style="color: #c678dd;">}</span>
+<span style="color: #51afef;">}</span>
+</pre>
+</div>
+</div>
+<div id="outline-container-org98b4a45" class="outline-4">
+<h4 id="org98b4a45"><span class="section-number-4">1.10.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-10-1">
+<ol class="org-ol">
+<li><p>
+BLANK1 implementation below
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #51afef;">this</span>.node.next != <span style="color: #a9a1e1;">null</span>
+</pre>
+</div>
+<ol class="org-ol">
+<li><p>
+BLANK2 implementation below
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #51afef;">this</span>.swap <span style="color: #51afef;">(</span><span style="color: #ECBE7B;">node</span>, node.<span style="color: #ECBE7B;">next</span><span style="color: #51afef;">)</span>;
+
+</pre>
+</div></li>
+<li><p>
+BLANK3 implementation below
+</p>
+<div class="org-src-container">
+<pre class="src src-java">node = node.next.next;
+</pre>
+</div></li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbf943eb" class="outline-3">
+<h3 id="orgbf943eb"><span class="section-number-3">1.11.</span> Problem 11</h3>
+<div class="outline-text-3" id="text-1-11">
+<p>
+<i>See problem on PDF, definetly took creative liberty with my answer</i>
+</p>
+
+<ol class="org-ol">
+<li><b>d.next.next.prev</b> is the second to last element, which is set to the current D (Diane is erased, Todd is both <b>D</b> and <b>d.next</b>)</li>
+<li><b>d.next</b> is set equal to <b>d.next.next</b>, which is the final element. This is essentially cutting the list short at 3 elements, erasing the last element which will get cleaned up by garbage collection</li>
+<li>D is set to the element of what is now the final elemnent (2nd index), so Mr. PeanutButter. The list is now &ldquo;Bojack&rdquo; -&gt; &ldquo;Mr. PeanutButter&rdquo; -&gt; &ldquo;Mr. PeanutButter&rdquo;</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1abdb04" class="outline-3">
+<h3 id="org1abdb04"><span class="section-number-3">1.12.</span> Problem 12</h3>
+<div class="outline-text-3" id="text-1-12">
+<p>
+Consider the following pseudocode for a sorting algorithm (please remember that when writing pseu-
+docode both bounds of a loop are included):
+</p>
+<div class="org-src-container">
+<pre class="src src-java">sorted = <span style="color: #a9a1e1;">false</span>
+start = <span style="color: #da8548; font-weight: bold;">0</span>
+end = list.length
+<span style="color: #51afef;">while</span> <span style="color: #51afef;">(</span><span style="color: #51afef; font-weight: bold;">!</span>sorted<span style="color: #51afef;">){</span>
+        sorted = <span style="color: #a9a1e1;">true</span>
+        <span style="color: #51afef;">for</span> j from start to end-<span style="color: #da8548; font-weight: bold;">2</span><span style="color: #c678dd;">{</span>
+                <span style="color: #51afef;">if</span> <span style="color: #98be65;">(</span>list<span style="color: #a9a1e1;">[</span>j<span style="color: #a9a1e1;">]</span> &gt; list<span style="color: #a9a1e1;">[</span>j+<span style="color: #da8548; font-weight: bold;">1</span><span style="color: #a9a1e1;">]</span><span style="color: #98be65;">){</span>
+                        swap<span style="color: #a9a1e1;">(</span>list<span style="color: #51afef;">[</span>j<span style="color: #51afef;">]</span>,list<span style="color: #51afef;">[</span>j+<span style="color: #da8548; font-weight: bold;">1</span><span style="color: #51afef;">]</span><span style="color: #a9a1e1;">)</span>
+                        sorted = <span style="color: #a9a1e1;">false</span>
+                <span style="color: #98be65;">}</span>
+        <span style="color: #c678dd;">}</span>
+        <span style="color: #5B6268;">// </span><span style="color: #5B6268;">line_1</span>
+        <span style="color: #51afef;">if</span> <span style="color: #c678dd;">(</span>sorted<span style="color: #c678dd;">)</span>
+                <span style="color: #51afef;">break</span>
+
+        end--
+
+        <span style="color: #51afef;">for</span> j from end-<span style="color: #da8548; font-weight: bold;">2</span> to start <span style="color: #c678dd;">{</span>
+                <span style="color: #51afef;">if</span> <span style="color: #98be65;">(</span>list<span style="color: #a9a1e1;">[</span>j<span style="color: #a9a1e1;">]</span> &gt; list<span style="color: #a9a1e1;">[</span>j+<span style="color: #da8548; font-weight: bold;">1</span><span style="color: #a9a1e1;">]</span><span style="color: #98be65;">){</span>
+                        swap<span style="color: #a9a1e1;">(</span>list<span style="color: #51afef;">[</span>j<span style="color: #51afef;">]</span>,list<span style="color: #51afef;">[</span>j+<span style="color: #da8548; font-weight: bold;">1</span><span style="color: #51afef;">]</span><span style="color: #a9a1e1;">)</span>
+                        sorted = <span style="color: #a9a1e1;">false</span>
+                <span style="color: #98be65;">}</span>
+        <span style="color: #c678dd;">}</span>
+        start++
+<span style="color: #51afef;">}</span>
+<span style="color: #5B6268;">// </span><span style="color: #5B6268;">line_2</span>
+</pre>
+</div>
+</div>
+<div id="outline-container-orgd484b86" class="outline-4">
+<h4 id="orgd484b86"><span class="section-number-4">1.12.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-12-1">
+<ol class="org-ol">
+<li>[0, 4, 5, 8, 3, 2, 1]</li>
+<li>[0, 1, 2, 3, 4, 5, 8, 9]</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb8d8bcc" class="outline-3">
+<h3 id="orgb8d8bcc"><span class="section-number-3">1.13.</span> Problem 13</h3>
+<div class="outline-text-3" id="text-1-13">
+<p>
+Consider the following pseudocode for selection sort:
+</p>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #51afef;">for</span> delim from <span style="color: #da8548; font-weight: bold;">0</span> to N-<span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #51afef;">{</span>
+        min = delim
+        <span style="color: #51afef;">for</span> i from delim+<span style="color: #da8548; font-weight: bold;">1</span> to N-<span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #c678dd;">{</span>
+                <span style="color: #51afef;">if</span><span style="color: #98be65;">(</span>list<span style="color: #a9a1e1;">[</span>i<span style="color: #a9a1e1;">]</span> &lt; list<span style="color: #a9a1e1;">[</span>min<span style="color: #a9a1e1;">]</span><span style="color: #98be65;">)</span> <span style="color: #98be65;">{</span>
+                        min = i
+                <span style="color: #98be65;">}</span>
+        <span style="color: #c678dd;">}</span>
+        <span style="color: #51afef;">if</span><span style="color: #c678dd;">(</span>min != delim<span style="color: #c678dd;">)</span> <span style="color: #c678dd;">{</span>
+                swap<span style="color: #98be65;">(</span>list<span style="color: #a9a1e1;">[</span>min<span style="color: #a9a1e1;">]</span>, list<span style="color: #a9a1e1;">[</span>delim<span style="color: #a9a1e1;">]</span><span style="color: #98be65;">)</span>
+        <span style="color: #c678dd;">}</span>
+<span style="color: #51afef;">}</span>
+</pre>
+</div>
+<p>
+(a) Assuming you would like to sort the list [1, 5, 3, 9, 2, 6, 4]. What is the state of the list after 4
+passes (i.e. iterations of the outer loop) ?
+(b) How many total swaps will the algorithm perform to sort the list mentioned above?
+</p>
+</div>
+<div id="outline-container-org29e5d73" class="outline-4">
+<h4 id="org29e5d73"><span class="section-number-4">1.13.1.</span> Answer</h4>
+<div class="outline-text-4" id="text-1-13-1">
+<ol class="org-ol">
+<li>[1, 2, 3, 4, 5, 6, 9]</li>
+<li>4 swaps, but the algorithm has an time efficiency of o(n<sup>2</sup>), meaning it will loop through the array twice per index</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
