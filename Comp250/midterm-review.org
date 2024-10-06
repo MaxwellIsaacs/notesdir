@@ -53,6 +53,10 @@ public static int findNextLargest(int upperBound, int[] array){
 #+BEGIN_SRC java
 array[i] > array[largest] && array[i] < upperBound
 #+END_SRC
+/Fixing the answer/ you need to do greater than or equal to largest, method doesn't return first instance of largest number
+#+BEGIN_SRC java
+array[i] >= array[largest] && array[i] < upperBound
+#+END_SRC
 + BLANK TWO
 #+BEGIN_SRC java
 largest = i;
@@ -76,12 +80,15 @@ members.
 2. One of the Galaxy class's constructors takes a string as a parameter
 3. numOfStars is initialized with a value in the constructor, or else it would have to be static
 
+/Fixing the answer/ All of these are correct, I guess, but the final one is kinda retarded. The class isn't abstract, that's a much better one
 
 ** Problem 4
 Suppose Strings A and B have the same hashCode. What does this tell us about A and B?
 
 *** Answer
 This means that the strings could be the same value, or they could just coincedentally have the same hash code. There are infinitely many strings and a finite amount of hash codes
+
+/this is true, you are a genius max/
 
 
 ** Problem 5
@@ -125,7 +132,8 @@ a. Here is my implementation
         return x.calculateWeight (this);
    }
    #+END_SRC
-b. *this* is memeber of the Planet data type
+   /again, you're a fucking genius max/
+b. *this* is /a/ memeber of the Planet data type
 
 
 
@@ -136,8 +144,9 @@ b. *this* is memeber of the Planet data type
 a. Candy would be considered an immutable data type, since it has all private fields and no setters. CandyStore follows the same structure (no setters, all private fields) so it is also immuatble
 b. My implementation is below:
    #+BEGIN_SRC java
-   this.candies[i].equals (c)
+   this.candies[i]./getColor()/equals (c)
    #+END_SRC
+   /you forgot to get the color itself, you were comparing objects to objects.You need to read the equals methods closer/
 c. getSourCandies is a static function associated with the Candy data type; Below is my implementation:
    #+BEGIN_SRC java
 public static Candy[] getSourCandies (String OOPsux, int whyDoesEeveryFunctionNeedAnAssociatedDataType);
@@ -146,6 +155,7 @@ d. Below is my implementation:
 #+BEGIN_SRC java
 candies[i].isChewier (c)
 #+END_SRC
+/you have to check if it is null, which makes sense I guess. But they wouldn't be equal even if they were, so it doesn't really matter/
 
 
 ** Problem 7
@@ -156,7 +166,8 @@ candies[i].isChewier (c)
 /Requires a UML diagram, see PDF/
 
 *** Answer
-return super.getPreptime() + Topping.getPrepTime;
+return super.getPreptime() + Topping.getPrepTime();
+/you needed to add 5 (see why), and you needed to call the method from the initialization of the class, it isn't static
 
 
 ** Problem 9
@@ -170,6 +181,7 @@ slytherin.add(new Wizard(age, “youknowwho”));
 #+END_SRC
 *** Answer
 Assuming everything about ArrayLists (missed this lecture), I would assume there is an object of ArrayList, a head and a tail. It also has the object within the list, so 4 in total.
+/I didn't understand this at all. Fix this/
 
 ** Problem 10
 Using the method above, fill in the missing expressions/statements below for a method in SLinkedList
@@ -202,6 +214,7 @@ this.swap (node, node.next);
    #+BEGIN_SRC java
 node = node.next.next;
    #+END_SRC
+   /this is all correct, you are a genius./
 
 ** Problem 11
 /See problem on PDF, definetly took creative liberty with my answer/
@@ -209,7 +222,7 @@ node = node.next.next;
 1. *d.next.next.prev* is the second to last element, which is set to the current D (Diane is erased, Todd is both *D* and *d.next*)
 2. *d.next* is set equal to *d.next.next*, which is the final element. This is essentially cutting the list short at 3 elements, erasing the last element which will get cleaned up by garbage collection
 3. D is set to the element of what is now the final elemnent (2nd index), so Mr. PeanutButter. The list is now "Bojack" -> "Mr. PeanutButter" -> "Mr. PeanutButter"
-
+/this is also right, and you did this high running on monster energy at 4am. Good 4 u/
 
 ** Problem 12
 Consider the following pseudocode for a sorting algorithm (please remember that when writing pseu-
@@ -246,6 +259,7 @@ while (!sorted){
 *** Answer
 a. [0, 4, 5, 8, 3, 2, 1]
 b. [0, 1, 2, 3, 4, 5, 8, 9]
+   /this is wrong as well/
 
 ** Problem 13
 Consider the following pseudocode for selection sort:
@@ -270,8 +284,4 @@ passes (i.e. iterations of the outer loop) ?
 *** Answer
 a. [1, 2, 3, 4, 5, 6, 9]
 b. 4 swaps, but the algorithm has an time efficiency of o(n^2), meaning it will loop through the array twice per index
-
-
-
-
-
+/one is correct, but the answer is 2. a swap is 1 per 2, not 2 per 1. That's retarded/
