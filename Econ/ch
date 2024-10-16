@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-15 Tue 19:07 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chapter 3 Notes:</title>
+<meta name="author" content="Max Isaacs" />
+<meta name="generator" content="Org Mode" />
+<style>
+          /* Custom CSS */
+          body { font-family: 'Roboto', 'Open Sans', sans-serif; max-width: 60em; margin: 0 auto; padding: 2em; background-color: #f9f9f9; color: #333; line-height: 1.6; font-size: 0.9em; }
+          h1, h2, h3, h4 { color: #2c3e50; margin-top: 1.5em; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5em; }
+          p, li { font-size: 1em; line-height: 1.6; margin-bottom: 1em; }
+          code, pre { background-color: #f3f4f6; border-radius: 5px; padding: 0.8em; font-family: 'Courier New', monospace; overflow: auto; margin: 1.2em; font-size: 0.85em; }
+          blockquote { border-left: 4px solid #3498db; padding-left: 1em; color: #555; font-style: italic; background-color: #f4f7f9; margin: 1em 0; }
+          table { border-collapse: collapse; width: 100%; }
+          td, th { border: 1px solid #ddd; padding: 8px; text-align: left; }
+          th { background-color: #f2f2f2; font-weight: bold; }
+          .todo { font-family: monospace; color: red; }
+          .done { font-family: monospace; color: green; }
+          .priority { font-family: monospace; color: orange; }
+        </style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Chapter 3 Notes:</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga9e6565">1. Section 3.1</a>
+<ul>
+<li><a href="#org882db21">1.1. The goal of this chapter is to determine pricing. This involves understanding how prices react to higher supply or freak events</a></li>
+<li><a href="#org2082b0a">1.2. <span class="underline">Desired Quantity</span>: &ldquo;The amount that consumers want to purchase when faced with a particular price of the product, other products&rsquo; prices, their incomes, and everything else that might matter&rdquo;</a></li>
+<li><a href="#org638bc8b">1.3. <span class="underline">Quantity bought</span> or <span class="underline">Quantity Exchanges</span>: The actual amount that people purchase</a></li>
+<li><a href="#org236e630">1.4. <span class="underline">Quantity demanded</span> || <i>Flow</i> of Purchases: the derivative of quantity bought, kind of</a></li>
+<li><a href="#org1cc8d36">1.5. How do we check for how each variable changes a product? <i>Ceteris Paribus</i></a></li>
+<li><a href="#org813e357">1.6. Flow vs Stock</a></li>
+<li><a href="#org214731f">1.7. Demand curve bullshit</a>
+<ul>
+<li><a href="#orgecd91cc">1.7.1. The 5 important causes of shifts in the demand curve:</a></li>
+</ul>
+</li>
+<li><a href="#org19eeade">1.8. Shifts versus movements</a></li>
+</ul>
+</li>
+<li><a href="#orgcb628f7">2. Important vocab, compiled</a>
+<ul>
+<li><a href="#org2d80a1f">2.1. <span class="underline">Desired Quantity</span>: &ldquo;The amount that consumers want to purchase when faced with a particular price of the product, other products&rsquo; prices, their incomes, and everything else that might matter&rdquo; (<i>stock variable</i>)</a></li>
+<li><a href="#org5237ef9">2.2. <span class="underline">Quantity bought</span> or <span class="underline">Quantity Exchanges</span>: The actual amount that people purchase (<i>stock variable</i>)</a></li>
+<li><a href="#org6f45f45">2.3. <span class="underline">Quantity demanded</span>: the amount of a certian product purchased over a given period of time (<i>flow variable</i>)</a></li>
+<li><a href="#org2891ad8">2.4. <span class="underline">Flow Variable</span>: A variable that represents a rate at which something happens. Basically a variable with respect to time (kinda like the derviative)</a></li>
+<li><a href="#org78df36d">2.5. <span class="underline">Stock Variable</span>: A variable that represents a scalar value, of a variable that isn&rsquo;t changing and isn&rsquo;t with respect to time (kinda like the integral).</a></li>
+</ul>
+</li>
+<li><a href="#org8c73a85">3. 3.2</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga9e6565" class="outline-2">
+<h2 id="orga9e6565"><span class="section-number-2">1.</span> Section 3.1</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org882db21" class="outline-3">
+<h3 id="org882db21"><span class="section-number-3">1.1.</span> The goal of this chapter is to determine pricing. This involves understanding how prices react to higher supply or freak events</h3>
+</div>
+
+<div id="outline-container-org2082b0a" class="outline-3">
+<h3 id="org2082b0a"><span class="section-number-3">1.2.</span> <span class="underline">Desired Quantity</span>: &ldquo;The amount that consumers want to purchase when faced with a particular price of the product, other products&rsquo; prices, their incomes, and everything else that might matter&rdquo;</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+In my own words, this is just how much people want to cop based on literally everything in their lives
+</p>
+<ul class="org-ul">
+<li>This is what I don&rsquo;t like about economics. This statistic seems impossible to calculate and completely usesless, since it&rsquo;s purely theoretical.</li>
+<li>I guess you could use it to understand the general ballpark of where to price something, and collecting the data would be as simple as asking a bunch of people what they would be willing to pay for something. The variance in what they say is indicitive of everyone having a different financial situations. Not a terrible stat, makes sense</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org638bc8b" class="outline-3">
+<h3 id="org638bc8b"><span class="section-number-3">1.3.</span> <span class="underline">Quantity bought</span> or <span class="underline">Quantity Exchanges</span>: The actual amount that people purchase</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>This makes that other stat even better. This actually makes a lot of sense now. It&rsquo;s just want people want versus what people actually buy. What a retarded field filled with jargon to explain simple concepts (unlike cs lmao)</li>
+</ul>
+
+
+<p>
+<b>THIS IS WRONG, BUT I KEPT IT: I misunderstood the statistic. It is not a derivative, it cannot be negative. It is actually the integral of <i>quanitity bought</i> over a given period of time. It is the amount purchased in a given time, not the rate at which people purchase shit, which would be the integral. The value cannot be negative</b>
+</p>
+<ul class="org-ul">
+<li></li>
+</ul>
+<p>
+<b>WAIT, I WAS RIGHT. FLOW CAN BE NEGATIVE, AND IS EQUAL TO THE DERIVATIVE. THE TEXTBOOK JUST SUCKS ASS. Flow variables can totally be negative, it&rsquo;s just the rate at which anything happens.</b>
+</p>
+</div>
+</div>
+<div id="outline-container-org236e630" class="outline-3">
+<h3 id="org236e630"><span class="section-number-3">1.4.</span> <span class="underline">Quantity demanded</span> || <i>Flow</i> of Purchases: the derivative of quantity bought, kind of</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Basically how much shit is purchased in a given period. It&rsquo;s less of the derivative, and more the slope a secant line, where the change in x between the two points is a certain&#x2026; (realized I was speaking out my ass lmao)
+</p>
+</div>
+</div>
+<div id="outline-container-org1cc8d36" class="outline-3">
+<h3 id="org1cc8d36"><span class="section-number-3">1.5.</span> How do we check for how each variable changes a product? <i>Ceteris Paribus</i></h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Which means treat every other feature as if they were constant
+</p>
+<ul class="org-ul">
+<li>Why not use partial derivatives? You could just take the partial derivative of one variable with respect to the total value, but whatever</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org813e357" class="outline-3">
+<h3 id="org813e357"><span class="section-number-3">1.6.</span> Flow vs Stock</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+Flow is a rate and stock is a scalar value. Flow is the derivative (or slope of a secant line) of quanitity bought, desired quantity, or any other statistic. Meanwhile, stock is the integral. It is a scalar value (of course, this doesn&rsquo;t extend to the graphs of the flow of flow variables, or second derviatives, because the integral will be another flow variable, so I guess it would be the double integral)
+</p>
+</div>
+</div>
+<div id="outline-container-org214731f" class="outline-3">
+<h3 id="org214731f"><span class="section-number-3">1.7.</span> Demand curve bullshit</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+You read a demand curve the way you read a graph <b>mind blown</b>. When it shifts to the right, it means demand went up. This is called  phase shift (thank you mr. schillaci). When it shifts to the left, demand has gone down. This is very intuative when you look at a demand graph, which is shown below.
+<img src="supply-demand-curve.png" alt="supply-demand-curve.png" />
+</p>
+</div>
+<div id="outline-container-orgecd91cc" class="outline-4">
+<h4 id="orgecd91cc"><span class="section-number-4">1.7.1.</span> The 5 important causes of shifts in the demand curve:</h4>
+<div class="outline-text-4" id="text-1-7-1">
+<ol class="org-ol">
+<li>consumers&rsquo; income</li>
+<li>prices of other good
+<ol class="org-ol">
+<li>we call products that fill gaps because they are cheaper &ldquo;subistitutes in consumption&rdquo;</li>
+<li>products that rely on each other also affect the demand for each other. These are called &ldquo;complements in consumption.&rdquo; An example can be cars and gasoline, or weed and rolling papers, or alcohol, cocaine, cigarettes, and prositutes.</li>
+</ol></li>
+<li>Consumers&rsquo; preferences</li>
+<li>Population
+<ol class="org-ol">
+<li>more jits means more demand</li>
+</ol></li>
+<li>Significant changes in weather</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org19eeade" class="outline-3">
+<h3 id="org19eeade"><span class="section-number-3">1.8.</span> Shifts versus movements</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+People can have a higher demand for something and still buy less, it&rsquo;s just a matter of shifting the demand curve itself versus moving the point by adusting the price. If people want more of something, the demand curve shifts. If the price of something rises (y axis), the amount that buy goes down, even if they want it.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcb628f7" class="outline-2">
+<h2 id="orgcb628f7"><span class="section-number-2">2.</span> Important vocab, compiled</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org2d80a1f" class="outline-3">
+<h3 id="org2d80a1f"><span class="section-number-3">2.1.</span> <span class="underline">Desired Quantity</span>: &ldquo;The amount that consumers want to purchase when faced with a particular price of the product, other products&rsquo; prices, their incomes, and everything else that might matter&rdquo; (<i>stock variable</i>)</h3>
+</div>
+<div id="outline-container-org5237ef9" class="outline-3">
+<h3 id="org5237ef9"><span class="section-number-3">2.2.</span> <span class="underline">Quantity bought</span> or <span class="underline">Quantity Exchanges</span>: The actual amount that people purchase (<i>stock variable</i>)</h3>
+</div>
+<div id="outline-container-org6f45f45" class="outline-3">
+<h3 id="org6f45f45"><span class="section-number-3">2.3.</span> <span class="underline">Quantity demanded</span>: the amount of a certian product purchased over a given period of time (<i>flow variable</i>)</h3>
+</div>
+<div id="outline-container-org2891ad8" class="outline-3">
+<h3 id="org2891ad8"><span class="section-number-3">2.4.</span> <span class="underline">Flow Variable</span>: A variable that represents a rate at which something happens. Basically a variable with respect to time (kinda like the derviative)</h3>
+</div>
+<div id="outline-container-org78df36d" class="outline-3">
+<h3 id="org78df36d"><span class="section-number-3">2.5.</span> <span class="underline">Stock Variable</span>: A variable that represents a scalar value, of a variable that isn&rsquo;t changing and isn&rsquo;t with respect to time (kinda like the integral).</h3>
+</div>
+</div>
+<div id="outline-container-org8c73a85" class="outline-2">
+<h2 id="org8c73a85"><span class="section-number-2">3.</span> 3.2</h2>
+</div>
+</div>
+</body>
+</html>

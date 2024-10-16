@@ -1,0 +1,84 @@
+#+title: Midterm I, Review III: The Real Deal
+#+OPTIONS: tex:t
+#+HTML_MATHJAX: t
+
+* Midterm Review III
+
+** Question 1
+I said just E, but that's wrong. It was also A, which is a mistake I might not have made if I wasn't reading it on the computer
+
+
+** Question 2
+        A. BOOM
+        B. BOOM
+        C. DOOM
+        D. BOOM
+        E. DOOM
+           Moral of the story, stick with your gut. You don't need to explicitly typecast to a double. Java isn't as retarded as you might think
+
+
+** Question 3
+a. Dragon d = new Monster ();
+b. Monster bojack = new Monster ();
+   Dragon dragon = (Dragon) bojack;
+c. Monster bojack = new Dragon();
+   Zombie walle = (Zombie) bojack;
+d. Monster bojack = new Zombie();
+   bojack.spook();
+e. Everything except Unicorn and Dragon
+f. Lines 4 and 5 will cause a runtime error. You need to call the Unicorn constructor
+   /again, there was an issue on the 11th line too, read the problem closer/
+g. 7
+   /It's not 7, it's 2. The array initializes the values as 0, which you already knew./
+h. The following is my implementation:
+       #+BEGIN_SRC java
+       public void encounter (Hero x) {
+           this.spook(); //this was added in after the face. Read the problem closer
+           if (x.engageInFight (this)) {
+               this.breatheFire();
+               x.retreat();
+           }
+       }
+       #+END_SRC
+
+
+** Question 4
+a. Mutable, you can groom the pet and change the fluffiness
+b. Below is my implementation:
+
+   #+BEGIN_SRC java
+   super(n, 10);
+   this.groomFactor = gf;
+   #+END_SRC
+
+c. Below is my implementation:
+   #+BEGIN_SRC java
+   @Override
+   public void groom () {
+        int i = 0;
+        while (i < this.groomFactor) {
+                super.groom();
+                i++;
+        }
+   }
+   #+END_SRC
+
+d. 20 + 15 + (10 + 2) 47, 9
+   /focus on the problem, read it very carefully/
+
+e. public static Rabbit getMostFamous (Pet[] bunnies);
+
+** Question 5
+(node.next != null && node != null)
+
+
+** Question 6
+Swaps all elements up to index i in list a
+
+
+** Question 7
+        D
+        B {E  A{ G } F}
+
+** Question 8
+        D

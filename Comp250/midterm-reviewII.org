@@ -1,0 +1,31 @@
+#+title: Midterm I, Review II: Maybe this one is harder? maybe this one is easier?
+#+OPTIONS: tex:t
+#+HTML_MATHJAX: t
+
+
+* Review 2
+** Problem 1
+        What do each of these code snippets print: /See pdf for snippets/
+        a. 2.5
+        b. 2.5
+        c. Error, runtime
+        d. Error, runtime
+        e. Error, compile time
+        f. 0
+        g. Error, compile time
+        h. Error, compile time
+        i. 4
+        j. 2, 4, 6, _8_
+
+
+
+** Problem 2
+       5, x isn't set equal to the increment
+
+** Problem 3
+        a. 3
+        b. 5
+        c. False, True
+
+
+** Problem 4

@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-15 Tue 21:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chapter 3 Notes: Supply and Demand 101</title>
+<meta name="author" content="Max Isaacs" />
+<meta name="generator" content="Org Mode" />
+<style>
+          /* Custom CSS */
+          body { font-family: 'Roboto', 'Open Sans', sans-serif; max-width: 60em; margin: 0 auto; padding: 2em; background-color: #f9f9f9; color: #333; line-height: 1.6; font-size: 0.9em; }
+          h1, h2, h3, h4 { color: #2c3e50; margin-top: 1.5em; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5em; }
+          p, li { font-size: 1em; line-height: 1.6; margin-bottom: 1em; }
+          code, pre { background-color: #f3f4f6; border-radius: 5px; padding: 0.8em; font-family: 'Courier New', monospace; overflow: auto; margin: 1.2em; font-size: 0.85em; }
+          blockquote { border-left: 4px solid #3498db; padding-left: 1em; color: #555; font-style: italic; background-color: #f4f7f9; margin: 1em 0; }
+          table { border-collapse: collapse; width: 100%; }
+          td, th { border: 1px solid #ddd; padding: 8px; text-align: left; }
+          th { background-color: #f2f2f2; font-weight: bold; }
+          .todo { font-family: monospace; color: red; }
+          .VOCAB { font-family: monospace; color: #6879D0; }
+          .done { font-family: monospace; color: green; }
+          .priority { font-family: monospace; color: orange; }
+        </style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Chapter 3 Notes: Supply and Demand 101</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org8f0138d">Section 3.1 Demand</a>
+<ul>
+<li><a href="#org2d17533"><span class="underline">Desired Quantity</span>: &ldquo;The amount that consumers want to purchase when faced with a particular price of the product, other products&rsquo; prices, their incomes, and everything else that might matter&rdquo;</a></li>
+<li><a href="#orgd1bf513"><span class="underline">Quantity bought</span> or <span class="underline">Quantity Exchanges</span>: The actual amount that people purchase</a></li>
+<li><a href="#org778b58d"><span class="underline">Quantity demanded</span> || <i>Flow</i> of Purchases: the derivative of quantity bought, kind of</a></li>
+<li><a href="#orgf61f019">How do we check for how each variable changes a product? <i>Ceteris Paribus</i></a></li>
+<li><a href="#org9ca547c">Flow vs Stock</a></li>
+<li><a href="#org4f07100">Demand curve bullshit</a>
+<ul>
+<li><a href="#org78df3f1">The 5 important causes of shifts in the demand curve:</a></li>
+</ul>
+</li>
+<li><a href="#org78bc75b">Shifts versus movements</a></li>
+</ul>
+</li>
+<li><a href="#org980a742">3.2 Supply</a>
+<ul>
+<li><a href="#orgd4a9c9a">Quantity Supplied</a></li>
+<li><a href="#org025a209">Quantity Sold or Quantity Exchanged</a></li>
+<li><a href="#orga987196">Supply curve bullshit</a></li>
+<li><a href="#orgf3d55da">6 possible causes of shifts in the supply curve</a></li>
+</ul>
+</li>
+<li><a href="#org14bcd6c">3.3 The Determination of Price</a>
+<ul>
+<li><a href="#orgf4b192f">What is a market?</a></li>
+<li><a href="#orgf729aa3">Market Equilibruim</a>
+<ul>
+<li><a href="#math-ex">Mathmatical Example</a></li>
+</ul>
+</li>
+<li><a href="#org3049bfa">Comparative statics</a></li>
+</ul>
+</li>
+<li><a href="#org6e32a3d">Ultimate Takeaways</a>
+<ul>
+<li><a href="#org80f8716">Important vocab, compiled</a>
+<ul>
+<li><a href="#org5f5959e"><span class="todo VOCAB">VOCAB</span> Flow Variable</a></li>
+<li><a href="#orga342da6"><span class="todo VOCAB">VOCAB</span> Stock Variable</a></li>
+<li><a href="#org6500574"><span class="todo VOCAB">VOCAB</span> Ceteris Paribus</a></li>
+<li><a href="#org8e6002b"><span class="todo VOCAB">VOCAB</span> Desired Quantity</a></li>
+<li><a href="#org9353fb0"><span class="todo VOCAB">VOCAB</span> Quantity Demanded</a></li>
+<li><a href="#org86092d9"><span class="todo VOCAB">VOCAB</span> Quantity Supplied</a></li>
+<li><a href="#org4dc52ea"><span class="todo VOCAB">VOCAB</span> Quantity Sold or Quantity Exchnaged</a></li>
+<li><a href="#org939e3c4"><span class="todo VOCAB">VOCAB</span> Market</a></li>
+<li><a href="#orgc61c132"><span class="todo VOCAB">VOCAB</span> Equilibrium</a></li>
+<li><a href="#org1a95960"><span class="todo VOCAB">VOCAB</span> Exogenous</a></li>
+<li><a href="#org9c0af10"><span class="todo VOCAB">VOCAB</span> Endogenous</a></li>
+<li><a href="#org0710701"><span class="todo VOCAB">VOCAB</span> Abosolute Price</a></li>
+<li><a href="#org7f6b549"><span class="todo VOCAB">VOCAB</span> Relative Price</a></li>
+</ul>
+</li>
+<li><a href="#org9ec4bcd">What I learned</a></li>
+<li><a href="#orgfb4f7ec"><span class="todo TODO">TODO</span> review this chapter</a></li>
+<li><a href="#org0426eba"><span class="todo TODO">TODO</span> practice problems</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8f0138d" class="outline-2">
+<h2 id="org8f0138d">Section 3.1 Demand</h2>
+<div class="outline-text-2" id="text-org8f0138d">
+<ul class="org-ul">
+<li>The goal of this chapter is to determine pricing. This involves understanding how prices react to higher supply or freak events</li>
+</ul>
+</div>
+<div id="outline-container-org2d17533" class="outline-3">
+<h3 id="org2d17533"><span class="underline">Desired Quantity</span>: &ldquo;The amount that consumers want to purchase when faced with a particular price of the product, other products&rsquo; prices, their incomes, and everything else that might matter&rdquo;</h3>
+<div class="outline-text-3" id="text-org2d17533">
+<p>
+In my own words, this is just how much people want to cop based on literally everything in their lives
+</p>
+<ul class="org-ul">
+<li>This is what I don&rsquo;t like about economics. This statistic seems impossible to calculate and completely usesless, since it&rsquo;s purely theoretical.</li>
+<li>I guess you could use it to understand the general ballpark of where to price something, and collecting the data would be as simple as asking a bunch of people what they would be willing to pay for something. The variance in what they say is indicitive of everyone having a different financial situations. Not a terrible stat, makes sense</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd1bf513" class="outline-3">
+<h3 id="orgd1bf513"><span class="underline">Quantity bought</span> or <span class="underline">Quantity Exchanges</span>: The actual amount that people purchase</h3>
+<div class="outline-text-3" id="text-orgd1bf513">
+<ul class="org-ul">
+<li>This makes that other stat even better. This actually makes a lot of sense now. It&rsquo;s just want people want versus what people actually buy. What a retarded field filled with jargon to explain simple concepts (unlike cs lmao)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org778b58d" class="outline-3">
+<h3 id="org778b58d"><span class="underline">Quantity demanded</span> || <i>Flow</i> of Purchases: the derivative of quantity bought, kind of</h3>
+<div class="outline-text-3" id="text-org778b58d">
+<p>
+Basically how much shit is purchased in a given period. It&rsquo;s less of the derivative, and more the slope a secant line, where the change in x between the two points is a certain&#x2026; (realized I was speaking out my ass lmao) &lt;- this is actually correct, I just got misled by the textbook. I documented my thought process below
+</p>
+
+<p>
+<b>THIS IS WRONG, BUT I KEPT IT: I misunderstood the statistic. It is not a derivative, it cannot be negative. It is actually the integral of <i>quanitity bought</i> over a given period of time. It is the amount purchased in a given time, not the rate at which people purchase shit, which would be the integral. The value cannot be negative</b>
+</p>
+
+<p>
+<b>WAIT, I WAS RIGHT. FLOW CAN BE NEGATIVE, AND IS EQUAL TO THE DERIVATIVE. THE TEXTBOOK JUST SUCKS ASS. Flow variables can totally be negative, it&rsquo;s just the rate at which anything happens.</b>
+</p>
+</div>
+</div>
+<div id="outline-container-orgf61f019" class="outline-3">
+<h3 id="orgf61f019">How do we check for how each variable changes a product? <i>Ceteris Paribus</i></h3>
+<div class="outline-text-3" id="text-orgf61f019">
+<p>
+Which means treat every other feature as if they were constant
+</p>
+<ul class="org-ul">
+<li>Why not use partial derivatives? You could just take the partial derivative of one variable with respect to the total value, but whatever</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9ca547c" class="outline-3">
+<h3 id="org9ca547c">Flow vs Stock</h3>
+<div class="outline-text-3" id="text-org9ca547c">
+<p>
+Flow is a rate and stock is a scalar value. Flow is the derivative (or slope of a secant line) of quanitity bought, desired quantity, or any other statistic. Meanwhile, stock is the integral. It is a scalar value (of course, this doesn&rsquo;t extend to the graphs of the flow of flow variables, or second derviatives, because the integral will be another flow variable, so I guess it would be the double integral)
+</p>
+</div>
+</div>
+<div id="outline-container-org4f07100" class="outline-3">
+<h3 id="org4f07100">Demand curve bullshit</h3>
+<div class="outline-text-3" id="text-org4f07100">
+<p>
+You read a demand curve the way you read a graph <b>mind blown</b>. When it shifts to the right, it means demand went up. This is called  phase shift (thank you mr. schillaci). When it shifts to the left, demand has gone down. This is very intuative when you look at a demand graph, which is shown below.
+<img src="demand-curve.png" alt="demand-curve.png" />
+</p>
+</div>
+<div id="outline-container-org78df3f1" class="outline-4">
+<h4 id="org78df3f1">The 5 important causes of shifts in the demand curve:</h4>
+<div class="outline-text-4" id="text-org78df3f1">
+<ol class="org-ol">
+<li>consumers&rsquo; income</li>
+<li>prices of other good
+<ol class="org-ol">
+<li>we call products that fill gaps because they are cheaper &ldquo;subistitutes in consumption&rdquo;</li>
+<li>products that rely on each other also affect the demand for each other. These are called &ldquo;complements in consumption.&rdquo; An example can be cars and gasoline, or weed and rolling papers, or alcohol, cocaine, cigarettes, and prositutes.</li>
+</ol></li>
+<li>Consumers&rsquo; preferences</li>
+<li>Population
+<ol class="org-ol">
+<li>more jits means more demand</li>
+</ol></li>
+<li>Significant changes in weather</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org78bc75b" class="outline-3">
+<h3 id="org78bc75b">Shifts versus movements</h3>
+<div class="outline-text-3" id="text-org78bc75b">
+<p>
+People can have a higher demand for something and still buy less, it&rsquo;s just a matter of shifting the demand curve itself versus moving the point by adusting the price. If people want more of something, the demand curve shifts. If the price of something rises (y axis), the amount that buy goes down, even if they want it.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org980a742" class="outline-2">
+<h2 id="org980a742">3.2 Supply</h2>
+<div class="outline-text-2" id="text-org980a742">
+</div>
+<div id="outline-container-orgd4a9c9a" class="outline-3">
+<h3 id="orgd4a9c9a">Quantity Supplied</h3>
+<div class="outline-text-3" id="text-orgd4a9c9a">
+<ul class="org-ul">
+<li>the amount that the seller wants to sell within a given time; basically just the desired quantity but for the supplier</li>
+<li>However, this is a flow variable. It is how much they want to sell in a given time. This is because buying something is</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org025a209" class="outline-3">
+<h3 id="org025a209">Quantity Sold or Quantity Exchanged</h3>
+<div class="outline-text-3" id="text-org025a209">
+<ul class="org-ul">
+<li>This is the amount that they actually sell</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga987196" class="outline-3">
+<h3 id="orga987196">Supply curve bullshit</h3>
+<div class="outline-text-3" id="text-orga987196">
+<ul class="org-ul">
+<li>A single point on the supply curve represents the price of a given product given the quantity. It has a upward slope and is concave down, representing how the change in quantity raises the price, but price differences become larger and larger given smaller and smaller changes as the cost of production gets too high, since they are creating so many of the product.</li>
+</ul>
+
+<div id="org76d848d" class="figure">
+<p><img src="supply-curve.png" alt="supply-curve.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf3d55da" class="outline-3">
+<h3 id="orgf3d55da">6 possible causes of shifts in the supply curve</h3>
+<div class="outline-text-3" id="text-orgf3d55da">
+<ol class="org-ol">
+<li>Prices of inputs
+<ul class="org-ul">
+<li>How much it costs to actually create something</li>
+</ul></li>
+<li>Technology
+<ul class="org-ul">
+<li>New tech removes a lot of the inputs and lowers the cost of production, in turn increasing the margins of the product and encouraging the company to product more</li>
+</ul></li>
+<li>Government taxes and subsidies
+<ul class="org-ul">
+<li>Anything that increases a firms&rsquo; costs will automatically shift the curve to the left (meaning the price gets more expensive for a given quantity produced)</li>
+</ul></li>
+<li>Prices of other Products</li>
+<li>Significant changes in weather</li>
+<li>Number of suppliers</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org14bcd6c" class="outline-2">
+<h2 id="org14bcd6c">3.3 The Determination of Price</h2>
+<div class="outline-text-2" id="text-org14bcd6c">
+</div>
+<div id="outline-container-orgf4b192f" class="outline-3">
+<h3 id="orgf4b192f">What is a market?</h3>
+<div class="outline-text-3" id="text-orgf4b192f">
+<ul class="org-ul">
+<li>Initially a market was an actual market, like Pike place. Now, a market is just a situation where buyers and sellers negotiate the exchange of goods or services</li>
+<li>A <i>perfectly competitve market</i> is a market so big and efficient that one single person doesn&rsquo;t hold any &ldquo;appreciable influence&rdquo; on the market pricing</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf729aa3" class="outline-3">
+<h3 id="orgf729aa3">Market Equilibruim</h3>
+<div class="outline-text-3" id="text-orgf729aa3">
+<ul class="org-ul">
+<li>Where the supply and demand curve meet. This is the price of any given item, along with how much will be produced</li>
+<li>below is the a graph showing the market equilibrium:</li>
+</ul>
+
+<div id="orge6a16b9" class="figure">
+<p><img src="supply-demand-curve.png" alt="supply-demand-curve.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>As you can see, there is only one spot where demand and supply intersect, meaning the price perfectly encapsulates how much the producer and demander want to sell or buy, respectively. This means that if the price is 100$, only  40 thousand apples will be bought, but 80 thousand will be produced. This effectively means that there is a surplus of 40k apples. Inversely, if the price is 20 dollars, then the producer will only produce 20k apples, while the demander would be willing to buy a little more than 100k apples. This means there are 80k apples that could have been purchased, but weren&rsquo;t because the price is too low for it to be worthwhile to the producer.
+
+<ul class="org-ul">
+<li>There are two terms to use here. The first is excess demand causes upward pressure on price. This means that if there is more demand than supply, the price will go up. The other is that excess supply causes downward pressure on price. This means that if there is more supply than demand, the price will drop.</li>
+</ul></li>
+</ul>
+</div>
+<div id="outline-container-math-ex" class="outline-4">
+<h4 id="math-ex">Mathmatical Example</h4>
+<div class="outline-text-4" id="text-math-ex">
+<p>
+\[
+Q^D = 100 - 3p
+\]
+\[
+Q^S = 20 + 2p
+\]
+Set \( Q^D = Q^S \):
+</p>
+
+<p>
+\[
+100 - 3p = 20 + 2p
+\]
+</p>
+
+<p>
+Solve for \( p \):
+</p>
+
+<p>
+\[
+p = 16
+\]
+</p>
+
+<p>
+Substitute \( p = 16 \) to find the equilibrium quantity \( Q \):
+</p>
+
+<p>
+\[
+Q = 52
+\]
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3049bfa" class="outline-3">
+<h3 id="org3049bfa">Comparative statics</h3>
+<div class="outline-text-3" id="text-org3049bfa">
+<ul class="org-ul">
+<li>This is the process of taking one equilibrium and changing one of the exogenous variables to study how the equilibrium price changes. There are 4 possible changes in the graph: supply right or left, demand right or left. Anything moving up is literally just prices rising for no reason, and going down is price lowering for no reason.</li>
+<li>What are the effects of these 4 changes? Question for when you come back (i know the answer right now lol)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6e32a3d" class="outline-2">
+<h2 id="org6e32a3d">Ultimate Takeaways</h2>
+<div class="outline-text-2" id="text-org6e32a3d">
+</div>
+<div id="outline-container-org80f8716" class="outline-3">
+<h3 id="org80f8716">Important vocab, compiled</h3>
+<div class="outline-text-3" id="text-org80f8716">
+</div>
+<div id="outline-container-org5f5959e" class="outline-4">
+<h4 id="org5f5959e"><span class="todo VOCAB">VOCAB</span> Flow Variable</h4>
+<div class="outline-text-4" id="text-org5f5959e">
+<ul class="org-ul">
+<li>Definition:  A variable that represents a rate at which something happens. Basically a variable with respect to time (kinda like the derviative)</li>
+<li>Example: the change in the demand within a given month</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga342da6" class="outline-4">
+<h4 id="orga342da6"><span class="todo VOCAB">VOCAB</span> Stock Variable</h4>
+<div class="outline-text-4" id="text-orga342da6">
+<ul class="org-ul">
+<li>Definition: A scalar value, a variable that doesn&rsquo;t vary or depend on time</li>
+<li>Example: the amount of money someone has a given time</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6500574" class="outline-4">
+<h4 id="org6500574"><span class="todo VOCAB">VOCAB</span> Ceteris Paribus</h4>
+<div class="outline-text-4" id="text-org6500574">
+<ul class="org-ul">
+<li>Definition: All other things considered as constant</li>
+<li>Example: We are understanding how the demand of a product changes with the price, ceteris paribus.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8e6002b" class="outline-4">
+<h4 id="org8e6002b"><span class="todo VOCAB">VOCAB</span> Desired Quantity</h4>
+<div class="outline-text-4" id="text-org8e6002b">
+<ul class="org-ul">
+<li>Definition: &ldquo;The amount that consumers want to purchase when faced with a particular price of the product, other products&rsquo; prices, their incomes, and everything else that might matter&rdquo; (<i>stock variable</i>)</li>
+<li>Example: How much weed I want to buy right now, even if I won&rsquo;t actually buy that much</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9353fb0" class="outline-4">
+<h4 id="org9353fb0"><span class="todo VOCAB">VOCAB</span> Quantity Demanded</h4>
+<div class="outline-text-4" id="text-org9353fb0">
+<ul class="org-ul">
+<li>Definition: the amount of a certain product purchased over a given period of time (<i>flow variable</i>)</li>
+<li>Example: how much people that buy coco puffs in a given week</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org86092d9" class="outline-4">
+<h4 id="org86092d9"><span class="todo VOCAB">VOCAB</span> Quantity Supplied</h4>
+<div class="outline-text-4" id="text-org86092d9">
+<ul class="org-ul">
+<li>Definition: The amount that the seller wants to sell in a given period (<i>flow variable</i>)</li>
+<li>Example: How many bottles of mouthwash rite aid wants to sell in a two month period</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4dc52ea" class="outline-4">
+<h4 id="org4dc52ea"><span class="todo VOCAB">VOCAB</span> Quantity Sold or Quantity Exchnaged</h4>
+<div class="outline-text-4" id="text-org4dc52ea">
+<ul class="org-ul">
+<li>Definition: How much the seller will actually sell (also <i>flow variable</i>)</li>
+<li>Example: How many bottles of lean my plug sells in 3 months</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org939e3c4" class="outline-4">
+<h4 id="org939e3c4"><span class="todo VOCAB">VOCAB</span> Market</h4>
+<div class="outline-text-4" id="text-org939e3c4">
+<ul class="org-ul">
+<li>Definition: A system where consumers and producers negotiate the exchange goods and services</li>
+<li>Example: The pencil market, where buyers buy pencils and other sellers sell pencils</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc61c132" class="outline-4">
+<h4 id="orgc61c132"><span class="todo VOCAB">VOCAB</span> Equilibrium</h4>
+<div class="outline-text-4" id="text-orgc61c132">
+<ul class="org-ul">
+<li>Definition: Where the supply and demand curve meet, representing the price that optimizes the amount produced and the amount purchased such that there is no surplus or</li>
+<li>Example: <a href="#math-ex">See this section</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1a95960" class="outline-4">
+<h4 id="org1a95960"><span class="todo VOCAB">VOCAB</span> Exogenous</h4>
+<div class="outline-text-4" id="text-org1a95960">
+<ul class="org-ul">
+<li>Definition: Independent variable</li>
+<li>Example: The variables that effect supply and demand shifts</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9c0af10" class="outline-4">
+<h4 id="org9c0af10"><span class="todo VOCAB">VOCAB</span> Endogenous</h4>
+<div class="outline-text-4" id="text-org9c0af10">
+<ul class="org-ul">
+<li>Definition: Dependent variables</li>
+<li>Example: Equilibrium price and quanitity</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0710701" class="outline-4">
+<h4 id="org0710701"><span class="todo VOCAB">VOCAB</span> Abosolute Price</h4>
+<div class="outline-text-4" id="text-org0710701">
+<ul class="org-ul">
+<li>Definition: the price of something as a scalar value, simple as that</li>
+<li>Example: A gram costs 10$</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7f6b549" class="outline-4">
+<h4 id="org7f6b549"><span class="todo VOCAB">VOCAB</span> Relative Price</h4>
+<div class="outline-text-4" id="text-org7f6b549">
+<ul class="org-ul">
+<li>Definition: The ratio of two absolute prices, conveying how a price changes <i>relative</i> to another price</li>
+<li>Example: How the price of carrots changes based on the price of other veggies</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9ec4bcd" class="outline-3">
+<h3 id="org9ec4bcd">What I learned</h3>
+<div class="outline-text-3" id="text-org9ec4bcd">
+<ul class="org-ul">
+<li>I don&rsquo;t nessicarily think I learned that much, but I more reinforced what I already knew. I think I have a much more robust understanding of supply and demand, and I&rsquo;ve learned a lot of economic jargon that I will need for the test. I felt a lot less efficient today, and I want to streamline my economic notes more.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfb4f7ec" class="outline-3">
+<h3 id="orgfb4f7ec"><span class="todo TODO">TODO</span> review this chapter</h3>
+</div>
+<div id="outline-container-org0426eba" class="outline-3">
+<h3 id="org0426eba"><span class="todo TODO">TODO</span> practice problems</h3>
+</div>
+</div>
+</div>
+</body>
+</html>
