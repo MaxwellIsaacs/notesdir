@@ -12,7 +12,7 @@
 
   [[file:elasticity.png]]
 
-+ In the graphic above, if /p_1/ - /p_0/ > /Q_0/ - /Q_1/ then the demand is elastic. A cool way to think about it is if you draw a secant line between the two points, if the slope is greater than 1 the demand is inelastic, but if it is less than 1 the demand is inelastic, meaning the change in quanitity exceeds the change in price.
++ In the graphic above, if /p_1/ - /p_0/ > /Q_0/ - /Q_1/ then the demand is elastic. A cool way to think about it is if you draw a secant line between the two points, if the slope is greater than 1 the demand is inelastic, but if it is less than 1 the demand is elastic, meaning the change in quanitity exceeds the change in price. This is only true if are looking at elasticity from demand to price. If you are looking at just elasticity of demand, which is a function of price, then a steeper slope means a lower elasticity. Look at the graph and imagine a steeper vs. less steep demand curve, and shift the supply curve. This should clear it up
 
 
 
@@ -92,8 +92,47 @@
 | η_S = infinity    | perfectly elastic    | Sellers are prepared to sell all they can at the given price. Supply curve is horizontal.        |
 
 * 4.3
-
+** Elasticity on Taxes
++ Tax incidence is used to determine whether consumers or producers (or both)
++ Canadian governments levy special sales taxes called excise taxes on products like cigs, alc, and gasoline (not zaza).
+  - These taxes are paid by the companies, per the amount of product that they sell. This sparks the question of tax incidence: who holds the burden of the taxes? The producer actually pays them, but the consumer argues that he pays them because the price is raised.
++ A graph of a taxpaid by the seller is shown below. As I can see, the price that the buyer pays goes up. However, this is not by a factor of the tax, meaning the entire burden is not placed on the buyer /the tax incidence is not on the buyer, but on the buyer and the seller/. Therefore, the seller is making a higher revenue, but not by a factor of t, so when the tax is subtracted the seller makes more money.
+  [[file:tax-incidence.png]]
++ To make this make more sense, you have to recognize that the change in price is equal to the \(Delta y\), or the y value of the slope of the secant line. This is not equal t.
++ This is also where elasticity comes in. You are shifting the supply curve, so the change in demand is going to be relative to the elasticity of demand with respect to supply. This is shown in the graphs below:
+  [[file:2-tax-incidence-graph.png]]
++ This is indicative of an important principle: the distribution of the burden of an excise tax between consumers and producers depends on the relative elasticities of supply and demand. Since the elasticity determines the concavity of a graph, this makes a lot of sense
++ You can determine who bears the larger tax burden by doing /P_c/ - /P_0/ to find the change in the consumers price, and then /P_0/ - /P_s/ to find the decline in the seller's revenue. If the change in the consumers price is larger than the decline in the seller's revenue, the consumer takes on the tax burden. Conversely, if the seller has a larger deline than the consumer's increase, then the seller takes on the tax burden.
 * 4.4
+** You can take the elasticity of anything
++ There are other important things that determine the quantity demanded besides price, such as income or weather patterns. You can take the Income elasticity of Demand as seen below:
+  #+BEGIN_EXPORT latex
+\[
+\eta_Y = \frac{\text{Percentage change in quantity demanded}}{\text{Percentage change in income}}
+\]
+#+END_EXPORT
++ For most goods, an increase in income leads to an increase in quantity demanded. These are called normal goods. If an increase in income leads to a decrease in quantity demanded, then these are inferior goods.
+
+*** Normal Good Rules
++ If income elasticity is positive but below 1, we say the product is /income inelastic/. Conversely, if the income elasticity is positive but above 1, the product is /income elastic/.
+
+
+*** Inferior Good Rules
++ These are harder to define; it is easier to find a personal inferior good rather than an inferior good for the market as a whole (although I thought my example below is pretty good).
+
+*** Cross Elasticity
++ This is a statistic that relatesthe percent change in quantity demanded to a percent change in the price of a different good
++ Any complementary products, such as cars and gasoline, have negative cross elasticities. If the price of alcohol goes up, the demand for cocaine goes down. This means they have a negative cross elasticity. You can use cross elasticity to determine whether products are subsititutes or complements, meaning they are either tied to each other in a positive of negative correlation (demand for one goes up, demand for the other goes up, or vice versa)
+        - This is important in matters of competition policy (like monopolies?)
+
+
+** Service Sector Facts
++ Interestingly, as income rises, so does demand for commodities like cars and TVs. However, after a certain point, the demand for all manufactured goods becomes less than demand for services like eating at a resturant and entertainment. In countries like the US and Canada, the service sector has had a higher output than the manufacturing sector for years (since the 1990s). However, in developing countries like China, this only became true in 2013.
+
+
+** Summary Table for Income Elasticity of Demand
+  [[file:income-elasticity-of-demand.png]]
+
 
 * Summary
 ** Important Vocab
@@ -103,9 +142,20 @@
 *** VOCAB Total expenditure
 - Definition: How much money the producer makes, or how much the consumer spends (glass half empty/half full). Defined by Price * Quantity
 - Example: 10 elmo dolls were made at 10 dollars a pop. This means disney (or whoever owns elmo) makes 100$ revenue, and we the consumer lose 100 dollars on bullshit
-*** VOCAB
-- Definition:
-- Example:
-*** VOCAB
-- Definition:
-- Example:
+*** VOCAB Tax Incidence
+- Definition: The question of who holds the burden of taxes, the producer and consumer.
+- Example: In the case of cigarettes, the consumer bears the burden of the taxes because the elasticity of demand is lower than elasticity of supply.
+*** VOCAB Inferior Goods
+- Definition: A good where demand falls with income rising
+- Example: Scratch off tickets
+*** VOCAB Normal Goods
+  - Definition: A good where demand rises with income
+  - Example: Air conditioning
+
+*** VOCAB Cross Elasticity of Demand
+  - Definition: The elasticity of quantity demanded relative to the percent change in the price of another good.
+  - Example: The elasticity for the demand for combustion engine cars as the price of EVs drops
+
+
+** TODO reread the notes
+** TODO practice problems
