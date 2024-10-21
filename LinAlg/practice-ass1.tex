@@ -1,0 +1,158 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{geometry}
+\geometry{margin=1in}
+\title{Linear Algebra Practice Problems}
+\author{Based on Assignments 1-5}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{System of Linear Equations}
+
+\subsection*{Problem 1}
+Solve the following system of equations using row reduction:
+\[
+\begin{cases}
+6x_1 + 10x_2 = 0, \\
+-9x_1 - 5x_2 = 0
+\end{cases}
+\]
+
+\subsection*{Problem 2}
+Write the augmented matrix for the following system:
+\[
+\begin{cases}
+-49y + 10z = -9, \\
+-76x + 76z = -7, \\
+-3x - 7y - z = -1
+\end{cases}
+\]
+
+\subsection*{Problem 3}
+Convert the following augmented matrix into the equivalent linear system:
+\[
+\begin{bmatrix}
+4 & 0 & -4 & -4 \\
+-1 & 4 & -4 & -7
+\end{bmatrix}
+\]
+
+\subsection*{Problem 4}
+Determine if the following system has a unique solution, infinitely many solutions, or no solution:
+\[
+\begin{cases}
+7x - 6y = 13, \\
+-5x - 7y = 2
+\end{cases}
+\]
+
+\section*{Matrix Operations}
+
+\subsection*{Problem 5}
+Compute the following matrix product:
+\[
+\begin{bmatrix}
+-5 & 4 \\
+1 & -3
+\end{bmatrix}
+\begin{bmatrix}
+-1 \\
+6
+\end{bmatrix}
+\]
+
+\subsection*{Problem 6}
+If
+\[
+A = \begin{bmatrix} -9 & 4 & 4 \\ 6 & -4 & 4 \\ 9 & 8 & 1 \end{bmatrix},
+\quad B = \begin{bmatrix} 4 & -9 & -1 \\ 2 & 6 & 3 \\ -5 & 1 & 2 \end{bmatrix}
+\]
+Compute $9A$, $A + 5B$, and $-4A - 4B$.
+
+\subsection*{Problem 7}
+Solve for $X$:
+\[
+AX + B = C
+\]
+where
+\[
+A = \begin{bmatrix} 7 & -2 \\ -9 & 4 \end{bmatrix}, \quad
+B = \begin{bmatrix} 5 & -2 \\ -4 & 2 \end{bmatrix}, \quad
+C = \begin{bmatrix} -7 & -7 \\ 6 & -1 \end{bmatrix}
+\]
+
+\section*{Matrix Inverses and Determinants}
+
+\subsection*{Problem 8}
+Find the inverse of the matrix:
+\[
+A = \begin{bmatrix} -1 & 2 & 3 \\ -2 & 6 & 5 \\ 0 & 4 & 1 \end{bmatrix}
+\]
+
+\subsection*{Problem 9}
+Solve the following system using matrix inversion:
+\[
+\begin{cases}
+4x_1 - 12x_2 - 33x_3 = -1, \\
+-3x_1 + 10x_2 + 27x_3 = 5, \\
+x_1 - 3x_2 - 8x_3 = 4
+\end{cases}
+\]
+Use the inverse of the matrix $A$ from Problem 8.
+
+\subsection*{Problem 10}
+Let
+\[
+A = \begin{bmatrix} -2 & 6 & 3 \\ -4 & 13 & 8 \\ 1 & -3 & -2 \end{bmatrix}, \quad
+B = \begin{bmatrix} 2 & -4 & 3 \\ 2 & -3 & 3 \\ 1 & -2 & 2 \end{bmatrix}
+\]
+Find $A^{-1}$, $B^{-1}$, and use them to compute $(AB)^{-1}$.
+
+\subsection*{Problem 11}
+For what values of $k$ is the matrix invertible?
+\[
+\begin{bmatrix}
+6 & -5 \\
+3 & k
+\end{bmatrix}
+\]
+
+\section*{Linear Transformations}
+
+\subsection*{Problem 12}
+Let $A = \begin{bmatrix} 3 & 4 \\ 3 & 8 \\ -1 & 3 \end{bmatrix}$. Define the linear transformation $T_A: \mathbb{R}^2 \to \mathbb{R}^3$ by $T_A(\vec{x}) = A\vec{x}$. Find the images of $\vec{u} = \begin{bmatrix} 4 \\ 3 \end{bmatrix}$ and $\vec{v} = \begin{bmatrix} a \\ b \end{bmatrix}$.
+
+\subsection*{Problem 13}
+Let $S: \mathbb{R}^3 \to \mathbb{R}^3$ be the transformation defined by $S(\vec{v}) = 4\vec{v}$. Find a matrix $A$ such that $T_A(\vec{v}) = S(\vec{v})$ for all $\vec{v} \in \mathbb{R}^3$.
+
+\section*{Gauss-Jordan Elimination}
+
+\subsection*{Problem 14}
+Use Gauss-Jordan elimination to reduce the following matrix to reduced row echelon form:
+\[
+\begin{bmatrix}
+-3 & 1 & -2 & 4 \\
+-3 & 1 & 3 & -1 \\
+-1 & -3 & 2 & 2
+\end{bmatrix}
+\]
+
+\section*{Block Matrices}
+
+\subsection*{Problem 15}
+Let
+\[
+C = \begin{bmatrix}
+-2 & 6 & 3 & 0 & 0 & 0 \\
+-4 & 13 & 8 & 0 & 0 & 0 \\
+1 & -3 & -2 & 0 & 0 & 0 \\
+0 & 0 & 0 & 2 & -4 & 3 \\
+0 & 0 & 0 & 2 & -3 & 3 \\
+0 & 0 & 0 & 1 & -2 & 2
+\end{bmatrix}
+\]
+Find $C^{-1}$ by treating it as a block diagonal matrix.
+
+\end{document}

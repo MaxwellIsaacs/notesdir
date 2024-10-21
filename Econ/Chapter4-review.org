@@ -1,0 +1,12 @@
+#+OPTIONS: tex:t
+#+HTML_MATHJAX: t
+#+title: Chapter 4 review
+#+author: Max Isaacs
+#+OPTIONS: num:nil
+
+
+* Elasticity is the percent change. It isn't slope, since it can't be negative (but then later in the text it mentions negative elasticity, so who tf knows).
+** TODO this makes no sense atm, but I bet its literally one chatgpt away
+
+
+*

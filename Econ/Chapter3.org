@@ -177,5 +177,7 @@ Q = 52
 
 ** What I learned
 - I don't nessicarily think I learned that much, but I more reinforced what I already knew. I think I have a much more robust understanding of supply and demand, and I've learned a lot of economic jargon that I will need for the test. I felt a lot less efficient today, and I want to streamline my economic notes more.
-** TODO review this chapter
+** DONE review this chapter
+- [[file:Chapter3-review.html][here]]
 ** TODO practice problems
+- do this with matis

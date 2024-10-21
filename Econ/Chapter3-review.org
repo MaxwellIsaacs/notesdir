@@ -1,0 +1,46 @@
+#+OPTIONS: tex:t
+#+HTML_MATHJAX: t
+#+title: Chapter 3 review
+#+author: Max Isaacs
+#+OPTIONS: num:nil
+
+
+* The goal of these supply and demand charts is to determine pricing
+- Makes sense
+
+* Quantity bought is what people actually buy, while desired quantity is what they want
+- makes sense
+
+
+* Flow variables are just the rate that things happen at. Quantity demanded is just the flow variable of quantity bought with respect to time. Stock variables are variables that describe static quantities, like how much zaza is in the trpa house safe
+- makes sense
+
+
+
+* We test shit by setting everything else equal to 0
+- makes sense
+
+
+* Shifts in the demand curve to the right and left mean in increase and decrease in demand, respectively. A shift up and down is just an increase or decrease in price, respectively
+- makes sense
+
+
+* Quantity supplied is the amount the seller wants to sell. Quantity sold/exchanged is how much they actually end up spending
+- makes sense
+
+
+
+* Same rules apply ot supply curve than demand curve with shifting
+- makes sense
+
+
+* In an efficient market, it is impossible to make a real influence as just one jit.
+- makes sense, corrobrates what I learn later about efficient markets
+
+
+* What are the effects of these 4 changes?
+- A shift to the right of the supply graph will move the price down and the supply up
+- a shift to the left of the supply graph will move the price up and supply down
+- a shift to the right of the demand curve will move the supply and price up
+- A shift to the left of the demand curve will move the supply and price down
+        - This is honestly a lesson in phase shifts of exponential graphs lmao.
