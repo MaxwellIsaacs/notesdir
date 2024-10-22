@@ -9,4 +9,17 @@
 ** TODO this makes no sense atm, but I bet its literally one chatgpt away
 
 
+
+
+
+* Elasticity is about percent change since absolute change doesn't paint the full picture.
+- Makes sense
+
+
+
+
+* Therefore, the elasticity is the percent change of the demand over the change in the price.
+- makes sense
+
+
 *

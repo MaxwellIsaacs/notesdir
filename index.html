@@ -7,138 +7,271 @@
     <title>max's notes</title>
     <style>
         * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #E4DCCF; /* Slightly darker eggshell */
+            color: #2C2C2C;
+            padding: 2rem;
+        }
 
-header {
-    text-align: center;
-    padding: 2rem;
-    background-color: #AF9FC9;
-    color: white;
-    width: 100%;
-}
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            background-color: #BFC0C0;
+            color: #2C2C2C;
+            margin-bottom: 2rem;
+            font-size: 3rem;
+            font-weight: bold;
+            border-bottom: 3px solid #4C6041; /* Dark green */
+        }
 
-h1 {
-    font-size: 2.5rem;
-}
+        .language-switch {
+            display: flex;
+            align-items: center;
+        }
 
-p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
+        .language-switch input {
+            appearance: none;
+            width: 100px;
+            height: 50px;
+            background-color: #4C6041; /* Dark green */
+            border-radius: 50px;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
 
-.classes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    width: 80%;
-    margin: 2rem 0;
-}
+        .language-switch input:checked {
+            background-color: #8265A7; /* Lighter purple when switched */
+        }
 
-.class {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+        .language-switch input::before {
+            content: 'EN';
+            color: white;
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
 
-.class h2 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
+        .language-switch input:checked::before {
+            content: 'FR';
+            right: 15px;
+            left: auto;
+        }
 
-.class ul {
-    list-style-type: none;
-}
+        .language-switch input::after {
+            content: '';
+            width: 46px;
+            height: 46px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            transition: 0.3s ease;
+        }
 
-.class li {
-    margin-bottom: 0.5rem;
-}
+        .language-switch input:checked::after {
+            left: 52px;
+        }
 
-.class a {
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-}
+        .classes {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            width: 100%;
+        }
 
-.class a:hover {
-    text-decoration: underline;
-}
+        .class {
+            border: 3px solid #4C6041; /* Dark green */
+            padding: 2rem;
+            background-color: #D5C7BC; /* Slightly darker eggshell */
+        }
 
-footer {
-    margin-top: auto;
-    padding: 1rem;
-    background-color: #AF9FC9;
-    color: white;
-    width: 100%;
-    text-align: center;
-}
+        .class h2 {
+            font-size: 2rem;
+            color: #8265A7; /* Lighter purple */
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #8265A7;
+            padding-bottom: 0.5rem;
+        }
 
+        ul {
+            list-style-type: none;
+            font-size: 1.2rem;
+        }
+
+        li {
+            margin: 1rem 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4C6041; /* Dark green */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #8265A7; /* Lighter purple on hover */
+        }
+
+        footer {
+            padding: 2rem;
+            background-color: #BFC0C0;
+            color: #2C2C2C;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 10px;
+        }
+
+        header, footer {
+            border-left: 15px solid #8265A7;
+        }
+
+        .class {
+            border-left: 10px solid #4C6041;
+        }
+
+        .class h2 {
+            text-transform: uppercase;
+        }
+
+        ul li::before {
+            content: "[ ]";
+            color: #4C6041;
+            padding-right: 0.5rem;
+        }
+
+        li.undone::before {
+            content: "[X]";
+            color: #C75146; /* Red for undone */
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>max's notes</h1>
-        <p>iain armitage could never</p>
+        <div>notesforallmyclasses</div>
+        <div class="language-switch">
+            <input type="checkbox" id="lang-switch" onchange="translatePage()">
+        </div>
     </header>
 
-    <section class="classes">
+    <section class="classes" id="content">
         <div class="class">
             <h2>Linear Algebra (MATH 133)</h2>
             <ul>
-                <p> textbook </p>
-                <li><a href="Comp250/chap2.html">II</a></li>
-                <li><a href="#">III (undone)</a></li>
-                <li><a href="#">3blue1brown (on paper, to be scanned)</a></li>
-                <p> Midterm - End </p>
+                <li><a href="Comp250/chap2.html">Chapter II</a></li>
+                <li class="undone"><a href="#">Chapter III (undone)</a></li>
+                <li><a href="#">3blue1brown (to be scanned)</a></li>
             </ul>
         </div>
 
         <div class="class">
             <h2>Microeconomics (ECON 208)</h2>
             <ul>
-                <p> textbook </p>
-                <li><a href="Econ/Chapter3.html">III</a></li>
-                <li><a href="Econ/Chapter4.html">IV</a></li>
-                <li><a href="Econ/Chapter5.html">V</a></li>
-                <li><a href="#">VI (undone)</a></li>
-                <p> Midterm - </p}>
-                <li><a href="Econ/Chapter7.org">Chapter 7 (undone)</a></li>
-                <li><a href="Econ/Chapter8.org">Chapter 8 (undone)</a></li>
-                <li><a href="Econ/Chapter9.org">Chapter 9 (undone)</a></li>
-                <li><a href="Econ/Chapter10.org">Chapter 10 (undone)</a></li>
-                <li><a href="Econ/Chapter11.org">Chapter 11 (undone)</a></li>
+                <li><a href="Econ/Chapter3.html">Chapter III</a></li>
+                <li><a href="Econ/Chapter4.html">Chapter IV</a></li>
+                <li><a href="Econ/Chapter5.html">Chapter V</a></li>
+                <li class="undone"><a href="#">Chapter VI (undone)</a></li>
             </ul>
         </div>
 
         <div class="class">
             <h2>Java and OOP (COMP 250)</h2>
             <ul>
-                <p> Start - Midterm </p>
-                <li><a href="Comp250/midterm-review.html">I</a></li>
-                <li><a href="Comp250/midterm-reviewII.html">II</a></li>
-                <li><a href="Comp250/midterm-reviewIII.html">III</a></li>
-                <p> Misc. </p>
-                <li><a href="Comp250/tlad.org">TerribleLinearAlgebra docs</a></li>
-                <li><a href="#">Problem Set 1</a></li>
-                <li><a href="#">Midterm Review</a></li>
+                <li><a href="Comp250/midterm-review.html">Review I</a></li>
+                <li><a href="Comp250/midterm-reviewII.html">Review II</a></li>
+                <li><a href="Comp250/midterm-reviewIII.html">Review III</a></li>
+                <li class="undone"><a href="#">Problem Set 1 (undone)</a></li>
             </ul>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Max Isaacs - <i>the best notes in the fucking universe</i></p>
+        &copy; 2024 Max Isaacs - <i> the best notes in the fucking universe </i>
     </footer>
+
+    <script>
+        function translatePage() {
+            const langSwitch = document.getElementById('lang-switch');
+            const content = document.getElementById('content');
+
+            if (langSwitch.checked) {
+                // Translate to French
+                document.querySelector('header div').textContent = "french is gay";
+                content.innerHTML = `
+                    <div class="class">
+                        <h2>Algèbre Linéaire (MATH 133)</h2>
+                        <ul>
+                            <li><a href="Comp250/chap2.html">Chapitre II</a></li>
+                            <li class="undone"><a href="#">Chapitre III (non terminé)</a></li>
+                            <li><a href="#">3blue1brown (à scanner)</a></li>
+                        </ul>
+                    </div>
+                    <div class="class">
+                        <h2>Microéconomie (ECON 208)</h2>
+                        <ul>
+                            <li><a href="Econ/Chapter3.html">Chapitre III</a></li>
+                            <li><a href="Econ/Chapter4.html">Chapitre IV</a></li>
+                            <li><a href="Econ/Chapter5.html">Chapitre V</a></li>
+                            <li class="undone"><a href="#">Chapitre VI (non terminé)</a></li>
+                        </ul>
+                    </div>
+                    <div class="class">
+                        <h2>Java et POO (COMP 250)</h2>
+                        <ul>
+                            <li><a href="Comp250/midterm-review.html">Révision I</a></li>
+                            <li><a href="Comp250/midterm-reviewII.html">Révision II</a></li>
+                            <li><a href="Comp250/midterm-reviewIII.html">Révision III</a></li>
+                            <li class="undone"><a href="#">Problème Set 1 (non terminé)</a></li>
+                        </ul>
+                    </div>
+                `;
+            } else {
+                // Switch back to English
+                document.querySelector('header div').textContent = "notesforallmyclasses";
+                content.innerHTML = `
+                    <div class="class">
+                        <h2>Linear Algebra (MATH 133)</h2>
+                        <ul>
+                            <li><a href="Comp250/chap2.html">Chapter II</a></li>
+                            <li class="undone"><a href="#">Chapter III (undone)</a></li>
+                            <li><a href="#">3blue1brown (to be scanned)</a></li>
+                        </ul>
+                    </div>
+                    <div class="class">
+                        <h2>Microeconomics (ECON 208)</h2>
+                        <ul>
+                            <li><a href="Econ/Chapter3.html">Chapter III</a></li>
+                            <li><a href="Econ/Chapter4.html">Chapter IV</a></li>
+                            <li><a href="Econ/Chapter5.html">Chapter V</a></li>
+                            <li class="undone"><a href="#">Chapter VI (undone)</a></li>
+                        </ul>
+                    </div>
+                    <div class="class">
+                        <h2>Java and OOP (COMP 250)</h2>
+                        <ul>
+                            <li><a href="Comp250/midterm-review.html">Review I</a></li>
+                            <li><a href="Comp250/midterm-reviewII.html">Review II</a></li>
+                            <li><a href="Comp250/midterm-reviewIII.html">Review III</a></li>
+                            <li class="undone"><a href="#">Problem Set 1 (undone)</a></li>
+                        </ul>
+                    </div>
+                `;
+            }
+        }
+    </script>
 </body>
 </html>

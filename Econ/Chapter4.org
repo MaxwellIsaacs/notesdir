@@ -12,7 +12,7 @@
 
   [[file:elasticity.png]]
 
-+ In the graphic above, if /p_1/ - /p_0/ > /Q_0/ - /Q_1/ then the demand is elastic. A cool way to think about it is if you draw a secant line between the two points, if the slope is greater than 1 the demand is inelastic, but if it is less than 1 the demand is elastic, meaning the change in quanitity exceeds the change in price. This is only true if are looking at elasticity from demand to price. If you are looking at just elasticity of demand, which is a function of price, then a steeper slope means a lower elasticity. Look at the graph and imagine a steeper vs. less steep demand curve, and shift the supply curve. This should clear it up
++ In the graphic above, if /p_1/ - /p_0/ > /Q_0/ - /Q_1/ then the demand is inelastic. A cool way to think about it is if you draw a secant line between the two points, if the slope is greater than 1 the demand is inelastic, but if it is less than 1 the demand is elastic, meaning the change in quanitity exceeds the change in price. This is only true if you are looking at elasticity of demand, which is a function of price (a steeper slope means a lower elasticity). Look at the graph and imagine a steeper vs. less steep demand curve, and shift the supply curve. This should clear it up
 
 
 

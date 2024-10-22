@@ -1,0 +1,95 @@
+#+title: Vocab
+
+* chap3
+*** VOCAB Flow Variable
+  - Definition:  A variable that represents a rate at which something happens. Basically a variable with respect to time (kinda like the derviative)
+  - Example: the change in the demand within a given month
+
+*** VOCAB Stock Variable
+  - Definition: A scalar value, a variable that doesn't vary or depend on time
+  - Example: the amount of money someone has a given time
+
+*** VOCAB Ceteris Paribus
+  - Definition: All other things considered as constant
+  - Example: We are understanding how the demand of a product changes with the price, ceteris paribus.
+
+*** VOCAB Desired Quantity
+  - Definition: "The amount that consumers want to purchase when faced with a particular price of the product, other products' prices, their incomes, and everything else that might matter" (/stock variable/)
+  - Example: How much weed I want to buy right now, even if I won't actually buy that much
+
+*** VOCAB Quantity Demanded
+  - Definition: the amount of a certain product purchased over a given period of time (/flow variable/)
+  - Example: how much people that buy coco puffs in a given week
+
+*** VOCAB Quantity Supplied
+  - Definition: The amount that the seller wants to sell in a given period (/flow variable/)
+  - Example: How many bottles of mouthwash rite aid wants to sell in a two month period
+
+*** VOCAB Quantity Sold or Quantity Exchnaged
+  - Definition: How much the seller will actually sell (also /flow variable/)
+  - Example: How many bottles of lean my plug sells in 3 months
+
+*** VOCAB Market
+  - Definition: A system where consumers and producers negotiate the exchange goods and services
+  - Example: The pencil market, where buyers buy pencils and other sellers sell pencils
+*** VOCAB Equilibrium
+  - Definition: Where the supply and demand curve meet, representing the price that optimizes the amount produced and the amount purchased such that there is no surplus or
+  - Example: [[#math-ex][See this section]]
+
+*** VOCAB Exogenous
+  - Definition: Independent variable
+  - Example: The variables that effect supply and demand shifts
+*** VOCAB Endogenous
+  - Definition: Dependent variables
+  - Example: Equilibrium price and quanitity
+
+*** VOCAB Abosolute Price
+  - Definition: the price of something as a scalar value, simple as that
+  - Example: A gram costs 10$
+
+*** VOCAB Relative Price
+  - Definition: The ratio of two absolute prices, conveying how a price changes /relative/ to another price
+  - Example: How the price of carrots changes based on the price of other veggies
+
+* chap4
+* Summary
+** Important Vocab
+*** VOCAB Elasticity
+  - Definition: How reliant demand is on price
+  - Example: A market like diabetes insulin has a very low elasticity, since you need it to surivive. So does housing. A lot of commodities have a high elasticity, such as coffee.
+*** VOCAB Total expenditure
+- Definition: How much money the producer makes, or how much the consumer spends (glass half empty/half full). Defined by Price * Quantity
+- Example: 10 elmo dolls were made at 10 dollars a pop. This means disney (or whoever owns elmo) makes 100$ revenue, and we the consumer lose 100 dollars on bullshit
+*** VOCAB Tax Incidence
+- Definition: The question of who holds the burden of taxes, the producer and consumer.
+- Example: In the case of cigarettes, the consumer bears the burden of the taxes because the elasticity of demand is lower than elasticity of supply.
+*** VOCAB Inferior Goods
+- Definition: A good where demand falls with income rising
+- Example: Scratch off tickets
+*** VOCAB Normal Goods
+  - Definition: A good where demand rises with income
+  - Example: Air conditioning
+
+*** VOCAB Cross Elasticity of Demand
+  - Definition: The elasticity of quantity demanded relative to the percent change in the price of another good.
+  - Example: The elasticity for the demand for combustion engine cars as the price of EVs drops
+
+
+* chap5
+*** VOCAB Price Floor
+  - Definition: A minimum price set by the government
+  - Example: There is a price floor for milk so local dairy farmers can remain competitive and keep up with the massive infastructure of a company like Horizon. Another great example is minimum wage, which is a price floor on the cost of labor
+  - Related Vocab: A price floor is said to be *binding* if the floor is above the equilibrium. See [[Price Floors][here]]
+*** VOCAB Price Ceiling
+  - Definition: A maximum price set by the government
+  - Example: Rent control or the price of certain vital medications
+  - Related Vocab: A price ceiling is said to be *binding* if the ceiling is below the equilibrium. See [[Price Ceilings][here]]
+*** VOCAB Sellers' Preferences
+  - Definition: When a seller keeps a product under the counter and only sells it to who he decides
+  - Example: Like when the plug got some new gas but only sells it to his mans
+*** VOCAB Hidden Markets
+  - Definition: Black market; a market that violates legal price control
+  - Example: The black market for prescription medication
+*** VOCAB Output Quota
+  - Definition: A minimum or maximum value that a supplier is forced to adhere to. See [[Output Quotas][here]] for a more detailed explantion
+  - Example: There is a quota on the number of taxi drivers a company is allowed to deploy, so the streets aren't full of taxi drivers. However, this leads to unrealized economic surplus
