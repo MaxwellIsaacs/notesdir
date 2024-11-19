@@ -1,0 +1,51 @@
+#+title: Midterm II, Review I:
+#+OPTIONS: tex:t
+#+HTML_MATHJAX: t
+
+* Problem 1
+a. false
+b. true
+c. true
+d. true
+
+
+* Problem 2
+a. o(n^2)
+b. o(nlog(n))
+c. o(n)
+d. o(n^2sqrt(n))
+e. o(n^2log(n))
+f. o(n^3)
+
+
+* Problem 3
+#+BEGIN_SRC java
+public static void reverseBottomK (Stack s, int k) {
+    Stack<Integer> right_temp = new Stack<> (s.size());
+    Stack<Integer> left_temp = new Stack<> (s.size());
+
+    for (int i = 0; i < s.size() - k; i++) {
+        right_temp.push (s.peek);
+        s.pop ();
+    }
+
+    for (int i = 0; i < k; i++) {
+        left_temp.push (s.peek);
+        s.pop()
+    }
+
+    for (int i = 0; i < s.size(); i++) {
+        if (i <= k) {
+            s.push (left_temp.peek);
+            left_temp.peek();
+            continue;
+        }
+        s.push (right_temp.peek);
+        right_temp.peek();
+    }
+}
+#+END_SRC
+* Problem 4
+
+
+* Problem 5

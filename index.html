@@ -131,6 +131,7 @@
             background-color: #BFC0C0;
             color: #2C2C2C;
             text-align: center;
+            border-top: 3px solid #4C6041;
             font-weight: bold;
             font-size: 1rem;
             margin: 10px;
@@ -149,13 +150,13 @@
         }
 
         ul li::before {
-            content: "[ ]";
+            content: "[+]";
             color: #4C6041;
             padding-right: 0.5rem;
         }
 
         li.undone::before {
-            content: "[X]";
+            content: "[-]";
             color: #C75146; /* Red for undone */
         }
     </style>

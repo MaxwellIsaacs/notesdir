@@ -1,0 +1,29 @@
+#+title: General Notes
+
+* Mathmatical induction will be on the midterm
+
+A _B_ C D E F G H I J
+
+1. H
+2. B
+3. E
+4. D
+5. F
+6.
+7.
+8.
+9.
+10.
+11. C
+
+
+1. H - "Proof by induction on nn."
+2. B - "Base case:"
+3. E - "Let n=3n=3, then 2n+1=72n+1=7 which is smaller than 8=2n8=2n."
+4. D - "Inductive Hypothesis: suppose 2k+1<2k2k+1<2k for some k>3k>3."
+5. F - "Inductive step:"
+6. J - "We need to show that 2⋅(k+1)+1<2k+12⋅(k+1)+1<2k+1."
+7. G - "Consider 2⋅(k+1)+12⋅(k+1)+1."
+9. A - "By expanding brackets and applying the IH, we get 2⋅(k+1)+1=2k+2+1<2k+22⋅(k+1)+1=2k+2+1<2k+2."
+10. I - "Which is less than 2k+12k+1, since 2<2k2<2k for any k≥3k≥3."
+11. C

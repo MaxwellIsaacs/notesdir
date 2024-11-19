@@ -1,0 +1,127 @@
+% Created 2024-11-19 Tue 18:15
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\date{\today}
+\title{Midterm II, Review II: The Real Deal}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={Midterm II, Review II: The Real Deal},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.7.11)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Question 1 almost, basically check}
+\label{sec:orgf3d8428}
+
+\begin{enumerate}
+\item o(n+m)
+\item o(n\textsuperscript{2})
+\item o(n * m)
+\item o(n\textsuperscript{m})
+
+why c and d are wrong.
+c is close, but because of i < m, the notation is actually o (min(n,m) * m)
+d is wrong completely, but I changed it. Basically, the second iteration is exponential, and is multiplied as many times as m. so n is multiplied by itself n\textsuperscript{m} times, and this is how many loops you do (as seen in k)
+\end{enumerate}
+\section{Question 2 nah}
+\label{sec:org550183f}
+
+f(n) = n\textsuperscript{2}
+g(n) = n
+h(n) = logn
+
+
+first statement: true
+ second statement: true
+ third statement: false
+ why? because lim \(\lim_{n \to \infty} \frac{g(n)}{h(n)} = \infty\). they do not change at the same rate, this statement is wrong and stupid. what retard wrote this?
+\section{Question 3 check?}
+\label{sec:orge7ca13a}
+\begin{enumerate}
+\item o(1)
+\item o(n)
+\end{enumerate}
+\section{Question 4 check}
+\label{sec:org2fc1d17}
+D R D R D [ l d ] [d]
+
+d r d r d [r d] [d] [ld]
+\section{Question 5 check}
+\label{sec:orgc320f9a}
+\begin{itemize}
+\item {[}11 21 \_36\_]
+\item {[}11 57]
+\end{itemize}
+
+{[}57 11 25]
+{[}25 (57 * 11)]
+\section{Question 6}
+\label{sec:org622d288}
+\begin{itemize}
+\item {[}- p f -]
+\item {[}- p F A]
+\item {[}- - F A]
+\item {[}G - F A]
+\end{itemize}
+\section{Question 7}
+\label{sec:org1e5b261}
+reverse a queue \textbf{q} up until \textbf{k} elements
+\section{Question 8}
+\label{sec:orgde43916}
+Blank One: !d1.isEmpty();
+Blank two: d2.addFirst (d1.removeLast());
+\section{Question 9}
+\label{sec:orgf807584}
+Both train() and pat(), since interface functions need to be defined
+\section{Question 10}
+\label{sec:org12f1254}
+\begin{enumerate}
+\item no error
+\item legal
+\item illegal
+\item illegal, you cannot directly initialize an interface
+\end{enumerate}
+\section{Question 11}
+\label{sec:org71d6bb8}
+Just iterable and comparable
+\section{Question 12}
+\label{sec:orgf925e83}
+E\^{}+ = \{2 + E\^{}+(n+1)\}
+\section{Question 13}
+\label{sec:org0e8155a}
+\[
+\sum_{i=1}^{n} (2i - 1)
+\]
+
+\[
+\sum_{i=1}^{1} (2i - 1)
+\]
+
+\begin{itemize}
+\item this is equal to 1, as is \textbf{n\textsuperscript{2}}
+\end{itemize}
+
+\[
+\sum_{i=1}^{n+1} (2i - 1)
+\]
+
+\begin{itemize}
+\item This is equal to 4, as is n\textsuperscript{2} \(\therefore\) the statement is true by proof of induction
+\end{itemize}
+\end{document}

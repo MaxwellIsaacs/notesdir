@@ -1,0 +1,9 @@
+#+OPTIONS: tex:t
+#+HTML_MATHJAX: t
+#+title: Chapter 5 Notes:
+#+author: Max Isaacs
+#+OPTIONS: num:nil
+
+* 6.1
+** Why do consumers make decisions?
+        + You cannot measure

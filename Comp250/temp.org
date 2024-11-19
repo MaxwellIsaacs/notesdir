@@ -1,0 +1,96 @@
+#+title: Midterm II, Review II: The Real Deal
+
+* Question 1 almost, basically check
+
+a. o(n+m)
+b. o(n^2)
+c. o(n * m)
+d. o(n^m)
+
+   why c and d are wrong.
+   c is close, but because of i < m, the notation is actually o (min(n,m) * m)
+   d is wrong completely, but I changed it. Basically, the second iteration is exponential, and is multiplied as many times as m. so n is multiplied by itself n^m times, and this is how many loops you do (as seen in k)
+* Question 2 nah
+
+f(n) = n^2
+g(n) = n
+h(n) = logn
+
+
+first statement: true
+ second statement: true
+ third statement: false
+ why? because lim \( \lim_{n \to \infty} \frac{g(n)}{h(n)} = \infty \). they do not change at the same rate, this statement is wrong and stupid. what retard wrote this?
+* Question 3 check?
+a. o(1)
+b. o(n)
+
+
+* Question 4 check
+D R D R D [ l d ] [d]
+
+d r d r d [r d] [d] [ld]
+
+
+* Question 5 check
++ [11 21 _36_]
++ [11 57]
+
+[57 11 25]
+[25 (57 * 11)]
+
+* Question 6
+- [- p f -]
+- [- p F A]
+- [- - F A]
+- [G - F A]
+
+
+* Question 7
+reverse a queue *q* up until *k* elements
+
+
+* Question 8
+Blank One: !d1.isEmpty();
+Blank two: d2.addFirst (d1.removeLast());
+
+
+* Question 9
+Both train() and pat(), since interface functions need to be defined
+
+
+* Question 10
+a. no error
+b. legal
+c. illegal
+d. illegal, you cannot directly initialize an interface
+
+
+* Question 11
+Just iterable and comparable
+
+* Question 12
+E^+ = {2 + E^+(n+1)}
+
+* Question 13
+#+begin_export latex
+\[
+\sum_{i=1}^{n} (2i - 1)
+\]
+#+end_export
+
+#+begin_export latex
+\[
+\sum_{i=1}^{1} (2i - 1)
+\]
+#+end_export
+
++ this is equal to 1, as is *n^2*
+
+#+begin_export latex
+\[
+\sum_{i=1}^{n+1} (2i - 1)
+\]
+#+end_export
+
++ This is equal to 4, as is n^2 \( \therefore \) the statement is true by proof of induction

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-11-19 Tue 18:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Midterm II, Review II: The Real Deal</title>
+<meta name="generator" content="Org Mode" />
+<style>
+          /* Custom CSS */
+          body { font-family: 'Roboto', 'Open Sans', sans-serif; max-width: 60em; margin: 0 auto; padding: 2em; background-color: #f9f9f9; color: #333; line-height: 1.6; font-size: 0.9em; }
+          h1, h2, h3, h4 { color: #2c3e50; margin-top: 1.5em; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5em; }
+          p, li { font-size: 1em; line-height: 1.6; margin-bottom: 1em; }
+          code, pre { background-color: #f3f4f6; border-radius: 5px; padding: 0.8em; font-family: 'Courier New', monospace; overflow: auto; margin: 1.2em; font-size: 0.85em; }
+          blockquote { border-left: 4px solid #3498db; padding-left: 1em; color: #555; font-style: italic; background-color: #f4f7f9; margin: 1em 0; }
+          table { border-collapse: collapse; width: 100%; }
+          td, th { border: 1px solid #ddd; padding: 8px; text-align: left; }
+          th { background-color: #f2f2f2; font-weight: bold; }
+          .todo { font-family: monospace; color: red; }
+          .VOCAB { font-family: monospace; color: #6879D0; }
+          .done { font-family: monospace; color: green; }
+          .priority { font-family: monospace; color: orange; }
+        </style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Midterm II, Review II: The Real Deal</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org22726e0">1. Question 1 almost, basically check</a></li>
+<li><a href="#org3a7cb24">2. Question 2 nah</a></li>
+<li><a href="#orgcc318a2">3. Question 3 check?</a></li>
+<li><a href="#org33cbe56">4. Question 4 check</a></li>
+<li><a href="#org77c22f0">5. Question 5 check</a></li>
+<li><a href="#orgd6c3ae6">6. Question 6</a></li>
+<li><a href="#org7145421">7. Question 7</a></li>
+<li><a href="#org3412a32">8. Question 8</a></li>
+<li><a href="#org3f6b093">9. Question 9</a></li>
+<li><a href="#orgc66fb1b">10. Question 10</a></li>
+<li><a href="#org182731f">11. Question 11</a></li>
+<li><a href="#orgb8aec65">12. Question 12</a></li>
+<li><a href="#orgd34b3eb">13. Question 13</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org22726e0" class="outline-2">
+<h2 id="org22726e0"><span class="section-number-2">1.</span> Question 1 almost, basically check</h2>
+<div class="outline-text-2" id="text-1">
+<ol class="org-ol">
+<li>o(n+m)</li>
+<li>o(n<sup>2</sup>)</li>
+<li>o(n * m)</li>
+<li><p>
+o(n<sup>m</sup>)
+</p>
+
+<p>
+why c and d are wrong.
+c is close, but because of i &lt; m, the notation is actually o (min(n,m) * m)
+d is wrong completely, but I changed it. Basically, the second iteration is exponential, and is multiplied as many times as m. so n is multiplied by itself n<sup>m</sup> times, and this is how many loops you do (as seen in k)
+</p></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org3a7cb24" class="outline-2">
+<h2 id="org3a7cb24"><span class="section-number-2">2.</span> Question 2 nah</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+f(n) = n<sup>2</sup>
+g(n) = n
+h(n) = logn
+</p>
+
+
+<p>
+first statement: true
+ second statement: true
+ third statement: false
+ why? because lim \( \lim_{n \to \infty} \frac{g(n)}{h(n)} = \infty \). they do not change at the same rate, this statement is wrong and stupid. what retard wrote this?
+</p>
+</div>
+</div>
+<div id="outline-container-orgcc318a2" class="outline-2">
+<h2 id="orgcc318a2"><span class="section-number-2">3.</span> Question 3 check?</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>o(1)</li>
+<li>o(n)</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org33cbe56" class="outline-2">
+<h2 id="org33cbe56"><span class="section-number-2">4.</span> Question 4 check</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+D R D R D [ l d ] [d]
+</p>
+
+<p>
+d r d r d [r d] [d] [ld]
+</p>
+</div>
+</div>
+<div id="outline-container-org77c22f0" class="outline-2">
+<h2 id="org77c22f0"><span class="section-number-2">5.</span> Question 5 check</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>[11 21 _36_]</li>
+<li>[11 57]</li>
+</ul>
+
+<p>
+[57 11 25]
+[25 (57 * 11)]
+</p>
+</div>
+</div>
+<div id="outline-container-orgd6c3ae6" class="outline-2">
+<h2 id="orgd6c3ae6"><span class="section-number-2">6.</span> Question 6</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>[- p f -]</li>
+<li>[- p F A]</li>
+<li>[- - F A]</li>
+<li>[G - F A]</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7145421" class="outline-2">
+<h2 id="org7145421"><span class="section-number-2">7.</span> Question 7</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+reverse a queue <b>q</b> up until <b>k</b> elements
+</p>
+</div>
+</div>
+<div id="outline-container-org3412a32" class="outline-2">
+<h2 id="org3412a32"><span class="section-number-2">8.</span> Question 8</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Blank One: !d1.isEmpty();
+Blank two: d2.addFirst (d1.removeLast());
+</p>
+</div>
+</div>
+<div id="outline-container-org3f6b093" class="outline-2">
+<h2 id="org3f6b093"><span class="section-number-2">9.</span> Question 9</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Both train() and pat(), since interface functions need to be defined
+</p>
+</div>
+</div>
+<div id="outline-container-orgc66fb1b" class="outline-2">
+<h2 id="orgc66fb1b"><span class="section-number-2">10.</span> Question 10</h2>
+<div class="outline-text-2" id="text-10">
+<ol class="org-ol">
+<li>no error</li>
+<li>legal</li>
+<li>illegal</li>
+<li>illegal, you cannot directly initialize an interface</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org182731f" class="outline-2">
+<h2 id="org182731f"><span class="section-number-2">11.</span> Question 11</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+Just iterable and comparable
+</p>
+</div>
+</div>
+<div id="outline-container-orgb8aec65" class="outline-2">
+<h2 id="orgb8aec65"><span class="section-number-2">12.</span> Question 12</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+E^+ = {2 + E^+(n+1)}
+</p>
+</div>
+</div>
+<div id="outline-container-orgd34b3eb" class="outline-2">
+<h2 id="orgd34b3eb"><span class="section-number-2">13.</span> Question 13</h2>
+<div class="outline-text-2" id="text-13">
+<ul class="org-ul">
+<li>this is equal to 1, as is <b>n<sup>2</sup></b></li>
+</ul>
+
+<ul class="org-ul">
+<li>This is equal to 4, as is n<sup>2</sup> \( \therefore \) the statement is true by proof of induction</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
